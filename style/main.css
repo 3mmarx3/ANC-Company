@@ -100,10 +100,16 @@ body {
 
 .footer {
     text-align: center;
-    margin-top: 50px;
 }
 
 
+
+.logo_foot{
+    background: url(../img/2a4a7591b1cf195968957db1b362190b.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
 @media screen and (max-width:992px) {
     .footer{
@@ -127,4 +133,10 @@ body {
    
         padding-right: 15px;
     }
+    .text{
+        display: block;
+        height: 10vh;
+        padding: 10px;
+      }
+      
 }

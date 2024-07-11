@@ -20,22 +20,21 @@ let header = `
                 </button>
                 <nav id="responsive_menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./Services.html">Services</a></li>
+                        <li><a href="../page/Contact.html">Contact us</a></li>
+                        <li><a href="../page/About.html">About</a></li>
                     </ul>
                 </nav>
                 <ul id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">About</a></li>
+                           <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="./Services.html">Services</a></li>
+                        <li><a href="./Contact.html">Contact us</a></li>
+                        <li><a href="./About.html">About</a></li>
                 </ul>
             </header>
-
 
 
 
