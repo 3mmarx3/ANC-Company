@@ -2,7 +2,6 @@
 
 
 body {
-    background-color: #111;
     color: #fff;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -158,9 +157,6 @@ body {
        
     }
 
-    .first-section{
-        height: 50vh !important;
-    }
 
     .Contact-us-title{
         margin-top: 3vh;
