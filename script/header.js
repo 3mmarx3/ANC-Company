@@ -20,7 +20,7 @@ let header = `
                 </button>
                 <nav id="responsive_menu">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="../index.html">Home</a></li>
                         <li><a href="./Portfolio.html">Portfolio</a></li>
                         <li><a href="./Services.html">Services</a></li>
                         <li><a href="../page/Contact.html">Contact us</a></li>

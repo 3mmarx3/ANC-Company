@@ -158,4 +158,12 @@ body {
        
     }
 
+    .first-section{
+        height: 50vh !important;
+    }
+
+    .Contact-us-title{
+        margin-top: 3vh;
+    }
+
 }
