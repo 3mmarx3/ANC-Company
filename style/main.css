@@ -15,7 +15,7 @@ body {
     padding: 20px;
     text-align: left;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -134,9 +134,28 @@ body {
         padding-right: 15px;
     }
     .text{
-        display: block;
-        height: 10vh;
-        padding: 10px;
+        display: none;
+    
       }
-      
+
+      .footer-menu ul li a {
+        font-size: large;
+    }
+    .Privacy_Policy a {
+        font-size: large !important;
+    }
+    .end svg {
+        width: 50%;
+    }
+ 
+    
+    .the_last .title h2 {
+        font-size: medium;
+    }
+    
+    .the_last .title {
+        width: 100% !important;
+       
+    }
+
 }

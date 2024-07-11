@@ -232,7 +232,45 @@ a sense of comfort and tranquility.
 
   <div class="footer_" id="foot">
 
-
   <script src="./script/footer.js"></script>
+  <script>
+    
+
+document.addEventListener("DOMContentLoaded", function () {
+    var hamburger = document.querySelector(".hamburger");
+    var responsiveMenu = document.getElementById("responsive_menu");
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        if (hamburger.classList.contains("is-active")) {
+            responsiveMenu.style.right = "0";
+        } else {
+            responsiveMenu.style.right = "-100%";
+        }
+    });
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".hero_text_title li", {
+    y: "100%",
+    stagger: 0.3,
+    scrollTrigger: {
+        trigger: ".hero_text_title",
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: true
+    }
+});
+
+gsap.from(".hero_text_tagline span", {
+    y: "100%",
+    scrollTrigger: {
+        trigger: ".hero_text_tagline",
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: true
+    }
+});
+  </script>
 </body>
 </html>

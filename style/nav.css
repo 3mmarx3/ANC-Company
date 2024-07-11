@@ -35,7 +35,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    height: 10vh;
+    height: 20vh;
     width: 100%;
 
 }
@@ -355,4 +355,5 @@ gap: 20px;
 }
 
 }
+
 

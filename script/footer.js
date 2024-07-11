@@ -4,12 +4,12 @@ let footer = `<div class="footer">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Contact </a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
             <ul>
                 <li><a href="#">Protofolio</a></li>
-                <li><a href="#">Architectural Design</a></li>
+                <li><a href="#">Architectural </a></li>
                 <li><a href="#">Interior Design</a></li>
             </ul>
         </div>
