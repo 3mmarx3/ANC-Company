@@ -126,11 +126,26 @@ body {
     .third-section {
         margin-top: 10vh;
     }
-    .main{display: none;}
+    .main{
+        height:80vh ;
+        margin-top: 10vh !important;
+        
+    }
 
     header {
    
         padding-right: 15px;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    position: fixed !important;
+    z-index: 9999999999999999;
+    background: #3A3A45;
+    height: 12vh !important;
+    top: 0;
     }
     .text{
         display: none;
@@ -152,14 +167,18 @@ body {
         font-size: medium;
     }
     
-    .the_last .title {
-        width: 100% !important;
-       
-    }
 
 
     .Contact-us-title{
         margin-top: 3vh;
     }
 
+}
+
+
+
+
+.link {
+    margin-top: -5vh;
+    margin-left: 13px;
 }

@@ -37,6 +37,10 @@ header {
     position: relative;
     height: 20vh;
     width: 100%;
+    position: fixed;
+    z-index: 99999999;
+    background: #3A3A45;
+    top: 0;
 
 }
 
