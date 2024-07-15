@@ -480,13 +480,66 @@
     <script src="./script/app.js"></script>
     <script src="./script/index.js"></script>
 
-    <script src="./script/header.js"></script>
 
     <script src="./script/footer.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    
+
+    <script>
+      
+
+    // القائمة المخفية
+    const menuButton = document.querySelector('.menu-button');
+    const menu = document.querySelector('.menu');
+    menu.style.display = 'none';
+
+    menuButton.addEventListener('click', function () {
+        if (menu.style.display === 'none') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    });
+
+    var hamburger = document.querySelector(".hamburger");
+    var responsiveMenu = document.getElementById("responsive_menu");
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        if (hamburger.classList.contains("is-active")) {
+            responsiveMenu.style.right = "0";
+        } else {
+            responsiveMenu.style.right = "-100%";
+        }
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".hero_text_title li", {
+        y: "100%",
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".hero_text_title",
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: true
+        }
+    });
+
+    gsap.from(".hero_text_tagline span", {
+        y: "100%",
+        scrollTrigger: {
+            trigger: ".hero_text_tagline",
+            start: "top 80%",
+            end: "bottom 20%",
+            scrub: true
+        }
+    });
+;
+
     </script>
 
 </body>
