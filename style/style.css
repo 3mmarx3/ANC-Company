@@ -236,7 +236,7 @@ footer.svelte-79dz0t.svelte-79dz0t {
     }
 }
 
-@media (max-width: 717px) {
+/* @media (max-width: 717px) {
     .logo.svelte-79dz0t.svelte-79dz0t {
         margin-top: 80px
     }
@@ -244,7 +244,8 @@ footer.svelte-79dz0t.svelte-79dz0t {
     footer.svelte-79dz0t.svelte-79dz0t {
         padding: 100px 0
     }
-}
+} */
+
 
 body:has(.overlay.active) {
     overflow: hidden

@@ -10,15 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
                             <li><a href="../page/About.html" data-sveltekit-reload class="svelte-79dz0t">About us</a></li>
                             <li><a href="../page/Contact.html" data-sveltekit-reload class="svelte-79dz0t">Contacts</a></li>
                             <li><a href="../page/Services.html" data-sveltekit-reload class="svelte-79dz0t">Services</a></li>
-                            <li><a href="../page/Contact.html" data-sveltekit-reload class="svelte-79dz0t">Career</a></li>
-                            <li><a href="#" data-sveltekit-reload class="svelte-79dz0t">Blog</a></li>
+                            <li><a href="../page/Portfolio.html" data-sveltekit-reload class="svelte-79dz0t">Portfolio</a></li>
+
                         </ul>
-                        <ul class="raw svelte-79dz0t">
-                            <li><a href="#" data-sveltekit-reload class="svelte-79dz0t">Portfolio</a></li>
-                            <li><a href="#" data-sveltekit-reload class="svelte-79dz0t">Commercials</a></li>
-                            <li><a href="#" data-sveltekit-reload class="svelte-79dz0t">Architectural design</a></li>
-                            <li><a href="#" data-sveltekit-reload class="svelte-79dz0t">Residential interiors</a></li>
-                        </ul>
+
                         <ul class="policy svelte-79dz0t">
                             <li><a href="#" data-sveltekit-reload class="svelte-79dz0t">Privacy Policy</a></li>
                         </ul>
