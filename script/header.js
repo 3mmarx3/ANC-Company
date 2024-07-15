@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <li><a href="#" data-sveltekit-reload class="svelte-79dz0t">Privacy Policy</a></li>
                         </ul>
                         <div class="logo svelte-79dz0t">
-                            <p class="date svelte-79dz0t">© 2013 — 2024 ANC-Company Interior Design and Engineering</p>
+                            <p class="date svelte-79dz0t">© 2024 — 2025 ANC-Company Interior Design and Engineering</p>
                             <ul class="locales svelte-79dz0t">
                                 <li><a href="#" data-sveltekit-preload-data="off" data-sveltekit-noscroll class="svelte-79dz0t">AR</a></li>
                                 <li><a href="#" data-sveltekit-preload-data="off" data-sveltekit-noscroll class="svelte-79dz0t active">en</a></li>
