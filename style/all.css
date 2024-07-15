@@ -673,8 +673,73 @@ h2.ttu.m-0 {
     display: block !important;
   }
 
+
+  .menu.svelte-19r4np0{
+    background: var(--primary-bg-color);
+  }
+
+
 @media screen and (max-width:992px) {
     .layout.two.svelte-4ubdxg.gap.grid_3 {
         grid-template-columns: 1fr ;
     }
 }
+
+
+
+._Portfolio {
+    margin-top: -26vh;
+    font-size: xx-large;
+    position: absolute;
+    z-index: 5;
+}
+
+._Portfolio h2{
+    font-size: 8vh !important;
+margin: 0 50px;
+}
+
+
+
+
+.icone {
+    width: 110px;
+    height: 110px;
+    
+    background: #26d367;
+    position: fixed;
+    z-index: 999999999;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+}
+
+
+.icone svg{
+  width: 70%;
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    
+    ._Portfolio ul.links.svelte-15esu0b,._Portfolio h2{
+        display: block;
+        font-size: medium !important;
+    }
+
+
+    .icone {
+        width: 60px;
+        height: 60px;
+    
+    }
+    
+}
+

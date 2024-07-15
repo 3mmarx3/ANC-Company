@@ -24,7 +24,7 @@ let footer = `        <footer class="svelte-79dz0t">
                         <li><a href="#" data-sveltekit-reload class="svelte-79dz0t">Privacy Policy</a></li>
                     </ul>
                     <div class="logo svelte-79dz0t">
-                
+
                             
                         <p class="date svelte-79dz0t">© 2024 — 2025 ANC-Compan </p>
                         <ul class="locales svelte-79dz0t">
