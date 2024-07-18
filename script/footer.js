@@ -1,7 +1,7 @@
 
 
 
-let footer = `        <footer class="svelte-79dz0t">
+let footer = `        <footer class="svelte-79dz0t ">
             <div class="container svelte-8p0mpe">
                 <div class="layout svelte-79dz0t">
                     <ul class="raw svelte-79dz0t">

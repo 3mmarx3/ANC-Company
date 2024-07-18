@@ -757,6 +757,20 @@ h2.ttu.m-0 {
         position: absolute;
         z-index: 5;
     }
+    .menu__wrapper.svelte-19r4np0 {
+        padding: 50px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+    }
+    footer.svelte-79dz0t.foot{
+        padding:  0 !important;
+    }
+    .titles {
+        margin: 3vh 0;
+    }
 
 }
 

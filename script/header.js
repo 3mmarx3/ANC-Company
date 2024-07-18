@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div></div> <button class="overlay svelte-19r4np0"></button>
     <div class="menu svelte-19r4np0">
         <div class="menu__wrapper svelte-19r4np0">
-            <footer class="svelte-79dz0t">
+            <footer class="svelte-79dz0t foot">
                 <div class="container svelte-8p0mpe">
                     <div class="layout svelte-79dz0t">
                         <ul class="raw svelte-79dz0t">
