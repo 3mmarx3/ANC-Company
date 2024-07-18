@@ -638,6 +638,7 @@ a.svelte-w5zyd8 {
 .layout.two.svelte-4ubdxg.gap.grid_3 {
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 h2.ttu.m-0 {
     margin: 10px 0 !important;
 }
@@ -662,23 +663,23 @@ h2.ttu.m-0 {
 
 .menu {
     padding: 10px;
-  }
+}
 
-  .second-section span {
+.second-section span {
     font-size: small;
 }
 
 
 
 
-  .menu.svelte-19r4np0{
+.menu.svelte-19r4np0 {
     background: var(--primary-bg-color);
-  }
+}
 
 
 @media screen and (max-width:992px) {
     .layout.two.svelte-4ubdxg.gap.grid_3 {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -691,9 +692,9 @@ h2.ttu.m-0 {
     z-index: 5;
 }
 
-._Portfolio h2{
+._Portfolio h2 {
     font-size: 8vh !important;
-margin: 0 50px;
+    margin: 0 50px;
 }
 
 
@@ -702,7 +703,7 @@ margin: 0 50px;
 .icone {
     width: 80px;
     height: 80px;
-    
+
     background: #26d367;
     position: fixed;
     z-index: 999999999;
@@ -711,22 +712,23 @@ margin: 0 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
-    
+
     justify-content: center;
 }
 
 
-.icone svg{
-  width: 70%;
-  cursor: pointer;
+.icone svg {
+    width: 70%;
+    cursor: pointer;
 }
 
 
 
 
 @media screen and (max-width:992px) {
-    
-    ._Portfolio ul.links.svelte-15esu0b,._Portfolio h2{
+
+    ._Portfolio ul.links.svelte-15esu0b,
+    ._Portfolio h2 {
         display: block;
         font-size: medium !important;
     }
@@ -735,9 +737,10 @@ margin: 0 50px;
     .icone {
         width: 60px;
         height: 60px;
-    
+
     }
-    header.svelte-15esu0b.svelte-15esu0b{
+
+    header.svelte-15esu0b.svelte-15esu0b {
         padding: 0 !important;
     }
 
@@ -747,13 +750,14 @@ margin: 0 50px;
         min-height: 100px !important;
 
     }
-    
+
     ._Portfolio {
         margin-top: -25vh;
         font-size: xx-large;
         position: absolute;
         z-index: 5;
     }
+
 }
 
 
@@ -775,13 +779,13 @@ section.svelte-1u4rqkz.pad {
 
 
 
-input:focus{
+input:focus {
     background: transparent !important;
 }
 
 
 
-.video.svelte-lf5dgy.pro{
+.video.svelte-lf5dgy.pro {
     background: linear-gradient(180deg, #0000 46.95%, #1f1f1f);
 }
 
@@ -789,16 +793,9 @@ input:focus{
 
 
 
-.SERVICES a{
-border-bottom:2px solid ;
-width: 100%;
+.SERVICES a {
+    border-bottom: 2px solid;
+    width: 100%;
 }
-
-
-
-
-
-
-
 
 
