@@ -54,7 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="container svelte-8p0mpe">
             <div class="wrapper svelte-15esu0b">
                 <div class="logo">
-                    <a href="../index.html"><img src="../img/logo.png" alt="ANC-Company" height="80"></a>
+                    <a href="../index.html"><img src="../img/logo.png" alt="ANC-Company"  width="50%"></a>
+                    
                 </div>
                 <ul class="links svelte-15esu0b">
                     <li><a href="../page/About.html" class="svelte-15esu0b">about</a></li>
@@ -78,13 +79,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // القائمة المخفية
     const menuButton = document.querySelector('.menu-button');
     const menu = document.querySelector('.menu');
+    var body = document.getElementById('body')
+
     menu.style.display = 'none';
 
     menuButton.addEventListener('click', function () {
         if (menu.style.display === 'none') {
             menu.style.display = 'block';
+            body.style.overflow='hidden';
+
+
         } else {
             menu.style.display = 'none';
+            body.style.overflow='auto';
+
+            
         }
     });
 
@@ -94,8 +103,13 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburger.classList.toggle("is-active");
         if (hamburger.classList.contains("is-active")) {
             responsiveMenu.style.right = "0";
+                body.style.overflow='hidden';
+
         } else {
             responsiveMenu.style.right = "-100%";
+            body.style.overflow='auto';
+
+
         }
     });
 

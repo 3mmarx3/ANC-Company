@@ -318,8 +318,9 @@ header.svelte-15esu0b.svelte-15esu0b {
     width: 100%;
     left: 0;
     top: 0;
-    padding: 30px 0;
-    background: linear-gradient(180deg, #1f1f1f66 -36.21%, #1f1f1f00);
+    /* background: linear-gradient(180deg, #1f1f1f66 -36.21%, #1f1f1f00);
+    backdrop-filter: blur(6px); */
+    background: linear-gradient(180deg, #000000 -36.21%, #1f1f1f40);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     font-size: 13px;

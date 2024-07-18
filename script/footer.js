@@ -26,7 +26,7 @@ let footer = `        <footer class="svelte-79dz0t">
                     <div class="logo svelte-79dz0t">
 
                             
-                        <p class="date svelte-79dz0t">© 2024 — 2025 ANC-Compan </p>
+                        <p class="date svelte-79dz0t">© 2024 — 2025 ANC Compan </p>
                         <ul class="locales svelte-79dz0t">
                             <li><a href="#" data-sveltekit-preload-data="off" data-sveltekit-noscroll
                                     class="svelte-79dz0t">AR</a> </li>
