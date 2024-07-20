@@ -121,10 +121,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <a href="../index.html"><img src="../img/logo.png" alt="ANC-Company" width="40%"></a>
           </div>
           <ul class="links svelte-15esu0b">
-            <li><a href="./page/About.html" class="svelte-15esu0b">about</a></li>
-            <li><a href="./page/Portfolio.html" class="svelte-15esu0b">portfolio</a></li>
-            <li><a href="./page/Contact.html" class="svelte-15esu0b">contacts</a></li>
-            <li><a href="./page/Services.html" class="svelte-15esu0b">services</a></li>
+            <li><a href="../page/About.html" class="svelte-15esu0b">about</a></li>
+            <li><a href="../page/Portfolio.html" class="svelte-15esu0b">portfolio</a></li>
+            <li><a href="../page/Contact.html" class="svelte-15esu0b">contacts</a></li>
+            <li><a href="../page/Services.html" class="svelte-15esu0b">services</a></li>
           </ul>
           <ul class="locales svelte-15esu0b">
             <li><a href="#" data-sveltekit-preload-data="off" data-sveltekit-noscroll class="svelte-15esu0b">AR</a></li>
