@@ -764,8 +764,8 @@ a.video-popup.mfp-iframe {
   
       position: fixed;
       z-index: 999999999;
-      bottom: 50px;
-      right: 50px;
+      bottom: 25px;
+      right: 25px;
   
   }
   
