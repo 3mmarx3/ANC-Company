@@ -686,8 +686,8 @@ h2.ttu.m-0 {
 
 
 ._Portfolio {
-    margin-top: -17vh;
-    font-size: xx-large;
+    margin-top: -15vh;
+    font-size: x-large;
     position: absolute;
     z-index: 5;
 }
@@ -729,7 +729,7 @@ h2.ttu.m-0 {
 
     ._Portfolio ul.links.svelte-15esu0b,
     ._Portfolio h2 {
-        display: block;
+        display: flex;
         font-size: medium !important;
     }
 
@@ -778,8 +778,8 @@ h2.ttu.m-0 {
 
 
 ul.socials.svelte-79dz0t li a svg {
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -823,4 +823,45 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0px 1000px var(--primary-bg-color) inset !important;
     -webkit-text-fill-color: white !important;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    
+
+ 
+    .logo {
+        width: 50%;
+    }
+    .logo a img {
+        width: 100%;
+    }
+
+
+    .projects__wrapper.svelte-xfd5yz{
+        padding-top: 5px;
+    }
+    ul.links.svelte-15esu0b {
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+    ._Portfolio h2 {
+        margin: 0;
+        font-size: x-large !important;
+        margin: 10px 0px;
+    }
+    ul.links.svelte-15esu0b li a {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    ._Portfolio {
+        margin: 10px !important;
+        margin-top: -12vh !important;
+    }
 }

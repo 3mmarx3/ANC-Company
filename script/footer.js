@@ -13,12 +13,11 @@ let footer = `        <footer class="svelte-79dz0t ">
                     </ul>
                     <ul class="raw svelte-79dz0t">
                         <li><a href="#" data-sveltekit-reload class="svelte-79dz0t">Portfolio</a></li>
-                        <li><a href="#" data-sveltekit-reload
-                                class="svelte-79dz0t">Commercials</a></li>
+                     
                         <li><a href="#" data-sveltekit-reload
                                 class="svelte-79dz0t">Architectural design</a></li>
                         <li><a href="#" data-sveltekit-reload
-                                class="svelte-79dz0t">Residential interiors</a></li>
+                                class="svelte-79dz0t">interiors  design</a></li>
                     </ul>
                     <ul class="policy svelte-79dz0t">
                         <li><a href="#" data-sveltekit-reload class="svelte-79dz0t">Privacy Policy</a></li>

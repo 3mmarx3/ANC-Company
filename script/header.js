@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="container svelte-8p0mpe">
             <div class="wrapper svelte-15esu0b">
                 <div class="logo">
-                    <a href="../index.html"><img src="../img/logo.png" alt="ANC-Company"  width="50%"></a>
+                    <a href="../index.html"><img src="../img/logo.png" alt="ANC-Company"  width="40%"></a>
                     
                 </div>
                 <ul class="links svelte-15esu0b">
