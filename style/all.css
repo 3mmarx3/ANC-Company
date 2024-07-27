@@ -466,7 +466,7 @@ img.svelte-14dhi5o {
     width: 100%;
     height: 130%;
     object-fit: cover;
-    object-position: center
+    object-position: center ;
 }
 
 article.s.svelte-14dhi5o {
@@ -679,7 +679,7 @@ h2.ttu.m-0 {
 
 @media screen and (max-width:992px) {
     .layout.two.svelte-4ubdxg.gap.grid_3 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -936,3 +936,13 @@ input:-webkit-autofill:active {
 
 
 
+article.m.svelte-14dhi5o {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+*{
+    text-transform: capitalize ;
+}

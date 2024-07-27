@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </ul>
                 <ul class="socials svelte-79dz0t">
 
-                  <li><a href="https://www.facebook.com/studia54/" rel="nofollow" class="svelte-79dz0t"><svg
+                  <li><a href="#" rel="nofollow" class="svelte-79dz0t"><svg
                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-facebook" viewBox="0 0 16 16">
                         <path
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-                  <li><a href="https://www.instagram.com/studia_54/" rel="nofollow" class="svelte-79dz0t"><svg
+                  <li><a href="#" rel="nofollow" class="svelte-79dz0t"><svg
                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-instagram" viewBox="0 0 16 16">
                         <path
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-                  <li><a href="https://vk.com/studia54buro" rel="nofollow" class="svelte-79dz0t"><svg
+                  <li><a href="#" rel="nofollow" class="svelte-79dz0t"><svg
                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-pinterest" viewBox="0 0 16 16">
                         <path
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-                  <li><a href="https://vk.com/studia54buro" rel="nofollow" class="svelte-79dz0t">
+                  <li><a href="#" rel="nofollow" class="svelte-79dz0t">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-snapchat" viewBox="0 0 16 16">
                         <path
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-                  <li><a href="https://vk.com/studia54buro" rel="nofollow" class="svelte-79dz0t">
+                  <li><a href="#" rel="nofollow" class="svelte-79dz0t">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-twitter-x" viewBox="0 0 16 16">
                         <path
