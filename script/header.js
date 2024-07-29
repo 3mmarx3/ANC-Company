@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     let header = `
-    <div></div> <button class="overlay svelte-19r4np0"></button>
+    <div></div> <button class="overlay svelte-19r4np0" id="opacity"></button>
    <div class="menu svelte-19r4np0">
       <div class="menu__wrapper svelte-19r4np0">
         <footer class="svelte-79dz0t foot">
@@ -145,20 +145,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const menu = document.querySelector('.menu');
     var body = document.getElementById('body')
 
+    var opacity = document.getElementById("opacity");
+
+
     menu.style.display = 'none';
 
     menuButton.addEventListener('click', function () {
-        if (menu.style.display === 'none') {
-            menu.style.display = 'block';
-            body.style.overflow='hidden';
+      if (menu.style.display === 'none') {
+        menu.style.display = 'block';
+        body.style.overflow = 'hidden';
+        opacity.style.opacity=1;
 
 
-        } else {
-            menu.style.display = 'none';
-            body.style.overflow='auto';
+      } else {
+        menu.style.display = 'none';
+        body.style.overflow = 'auto';
+        opacity.style.opacity=0;
 
-            
-        }
+
+      }
     });
 
     var hamburger = document.querySelector(".hamburger");

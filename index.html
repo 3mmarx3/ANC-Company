@@ -6,8 +6,6 @@
   <link rel="icon" href="./favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="./style/all.css">
-  <link rel="stylesheet" href="./style/main.css">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/normalize.css">
 
@@ -28,7 +26,7 @@
 <body data-sveltekit-preload-data="hover" id="body">
   <div style="display: contents">
 
-    <div></div> <button class="overlay svelte-19r4np0"></button>
+    <div></div> <button class="overlay svelte-19r4np0" id="opacity"></button>
     <div class="menu svelte-19r4np0">
       <div class="menu__wrapper svelte-19r4np0">
         <footer class="svelte-79dz0t foot">
@@ -534,7 +532,7 @@
 
 
 
-    
+
     <div class="container svelte-8p0mpe">
       <div class="layout half-and-third svelte-1czmovr gap align_bottom wrap_md">
         <h2 class="ttu m-0" style="">We are architects, designers, creative visionaries, and bold innovators, shaping a
@@ -659,9 +657,6 @@
 
 
 
-    <script src="./script/app.js"></script>
-    <script src="./script/index.js"></script>
-
 
     <script src="./script/footer.js"></script>
 
@@ -677,7 +672,9 @@
       // القائمة المخفية
       const menuButton = document.querySelector('.menu-button');
       const menu = document.querySelector('.menu');
-      var body = document.getElementById('body')
+      var body = document.getElementById('body');
+      var opacity = document.getElementById("opacity");
+
 
       menu.style.display = 'none';
 
@@ -685,10 +682,14 @@
         if (menu.style.display === 'none') {
           menu.style.display = 'block';
           body.style.overflow = 'hidden';
+          opacity.style.opacity = 1;
+
 
         } else {
           menu.style.display = 'none';
           body.style.overflow = 'auto';
+          opacity.style.opacity = 0;
+
 
         }
       });
@@ -700,7 +701,6 @@
         if (hamburger.classList.contains("is-active")) {
           responsiveMenu.style.right = "0";
           body.style.overflow = 'hidden';
-
         } else {
           responsiveMenu.style.right = "-100%";
           body.style.overflow = 'auto';
