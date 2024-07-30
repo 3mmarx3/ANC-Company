@@ -53,13 +53,13 @@ padding: 10px;
 .file-uploader .primary-icon {
 transition: 0.2s ease;
 }
-.file-uploader:hover {
+/* .file-uploader:hover {
 background: #E6F9F6;
 border: 2px dashed #0AC6A6;
 }
 .file-uploader:hover .primary-icon {
 color: #0AC6A6;
-}
+} */
 .file-uploader .drop-cta {
 display: none;
 }
@@ -627,11 +627,12 @@ body{
 
 input[type="file"] {
     opacity: 0;
-    width: 5px;
+    width: 100%;
     position: absolute;
     left: 0;
     right: 0;
     background: antiquewhite;
+    cursor: pointer;
 }
 
 .title {

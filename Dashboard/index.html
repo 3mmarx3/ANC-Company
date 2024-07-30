@@ -79,7 +79,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <span class="nav-link-text ms-1">about</span>
+                        <span class="nav-link-text ms-1">Home</span>
 
 
 
@@ -109,7 +109,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <span class="nav-link-text ms-1">Billing</span>
+                        <span class="nav-link-text ms-1">product</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -535,13 +535,15 @@
         <div id="div2" class="content">
             <div class="container text-center">
 
-                <h1>File upload drop area with contextual upload messaging</h1>
-                <p>Displays touch relevant messaging on devices with <code>hover: none</code> via media query</p>
-                <p><small>Please note, these are concepts only, not working file uploaders</small></p>
+                <h1>uploading photos or videos on the main page of the site</h1>
+
+               
+
+                <p> You can upload an image or video as desired in the  <code>upload files</code>  in order</p>
                 <div class="row">
                     <div class="col-md-10 mx-auto">
                         <section>
-                            <h5 class="mb-3 font-weight-bold">Image file uploader</h5>
+                            <h5 class="mb-3 font-weight-bold">One video || photos</h5>
                             <div class="file-uploader p-3 mb-5">
                                 <div
                                     class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
@@ -564,7 +566,7 @@
                         </section>
 
                         <section>
-                            <h5 class="mb-3 font-weight-bold">Image file uploader</h5>
+                            <h5 class="mb-3 font-weight-bold">Tow video || photos</h5>
                             <div class="file-uploader p-3 mb-5">
                                 <div
                                     class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
@@ -587,7 +589,7 @@
                         </section>
 
                         <section>
-                            <h5 class="mb-3 font-weight-bold">Image file uploader</h5>
+                            <h5 class="mb-3 font-weight-bold">One video || photos</h5>
                             <div class="file-uploader p-3 mb-5">
                                 <div
                                     class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
@@ -628,233 +630,114 @@
 
             <form autocomplete="on" class="container step-form" id="form">
                 <h1>
-                    Booking and timeline/step-stuff
-                </h1>
+                    Upload the design with all its details</h1>
                 <p>
-                    Continue to press 'continue' buttons to skip through this tedious form
-                </p>
-                <button class="demo outline" id="demo">Run demo mode</button>
+                    Make sure all files are filled out                </p>
+                <!-- <button class="demo outline" id="demo">Run demo mode</button> -->
                 <div class="timeline" id="timeline">
                     <div class="row">
                         <div class="col on step_1">
-                            <i class="badge circle">1</i><i class="desc">Ordering person</i>
+                            <i class="badge circle">1</i>
                         </div>
                         <div class="col step_2">
-                            <i class="badge circle">2</i><i class="desc">Contact</i>
+                            <i class="badge circle">2</i>
                         </div>
                         <div class="col step_3 complete">
-                            <i class="badge circle">3</i><i class="desc">Travellers</i>
+                            <i class="badge circle">3</i>
                         </div>
                     </div>
                 </div>
                 <div class="step" id="step_1">
                     <h2>
-                        Ordering person
-                    </h2>
+                        The first step                     </h2>
                     <p>
-                        The one that pays, can be one that pay and another that travels
-                    </p>
+                        is to upload the basic image, the name of the project, and the first popular description                    </p>
                     <p class="hidden">
                         Den som betalar, det kan vara en som betalar och en annan som reser
                     </p>
                     <div class="row">
                         <div class="col">
-                            <label>First Name <em>(according to passport)</em></label><input class="text"
-                                placeholder="Namn enligt pass" />
+                            <label>First img <em>  </em></label><input  type="file" class="text"
+                                placeholder="file" />
                         </div>
                         <div class="col">
-                            <label>Last Name <em>(according to passport)</em></label><input class="text"
-                                placeholder="Efternamn enligt pass" />
+                            <label>Name project <em>  </em></label><input class="text"
+                                placeholder="Name project" />
                         </div>
                     </div>
                     <div class="row">
+                        
                         <div class="col">
-                            <label>Sex</label>
-                            <div class="select-container">
-                                <select>
-                                    <option selected="selected" value="false">
-                                        Välj
-                                    </option>
-                                    <option>
-                                        Man
-                                    </option>
-                                    <option>
-                                        Woman
-                                    </option>
-                                </select>
-                            </div>
+                            <label>Project Description <em>  </em></label><input class="text"
+                                placeholder="Poject Description 1" />
                         </div>
                         <div class="col">
-                            <label>Date of Birth</label>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="select-container">
-                                        <select>
-                                            <option>
-                                                Year
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="select-container">
-                                        <select>
-                                            <option>
-                                                Month
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="select-container">
-                                        <select>
-                                            <option>
-                                                Day
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+                            <label>Project Description <em>( 2 )</em></label><input class="text"
+                                placeholder="Poject Description 2" />
                         </div>
                     </div>
                     <button class="continue" data-target="step_2">Continue</button>
                 </div>
                 <div class="step hidden" id="step_2">
                     <h2>
-                        Contact
+                        The second step 
                     </h2>
                     <p>
-                        How do we contact the ordering person?
-                    </p>
-                    <p class="hidden">
-                        Hur kontaktar vi beställaren?
-                    </p>
+                       is to upload 3 pictures of the project in order and description, then the big picture                    </p>
+
                     <div class="row col-4">
                         <div class="col">
-                            <label>Telephone</label><input class="text" placeholder="Ditt telefonnummer" />
+                            <label>img project 1</label><input  type="file"  class="text" placeholder="file" />
                         </div>
                         <div class="col">
-                            <label>Address</label><input class="text" placeholder="Ex: Stadsvägen 12" />
+                            <label>img project 2</label><input  type="file" class="text" placeholder="file" />
                         </div>
+                      
                         <div class="col">
-                            <label>ZIP</label><input class="text" placeholder="Ex: 128 45" />
-                        </div>
-                        <div class="col">
-                            <label>Post Town</label><input class="text" placeholder="Ex: Stockholm" />
+                            <label>img project 3</label><input   type="file"  class="text" placeholder="file" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <label>E-mail</label><input class="text" placeholder="Din E-postadress" />
+                            
+                            <label>Project Description</label><input class="text" placeholder="Project Description" />
                         </div>
                         <div class="col">
-                            <label>Verify E-mail</label><input class="text" placeholder="Skriv din E-post igen" />
+                            <label>big img</label><input class="text" type="file"  placeholder="file" />
                         </div>
                     </div>
                     <button class="continue" data-target="step_3">Continue</button>
                 </div>
                 <div class="step hidden" id="step_3">
                     <h2>
-                        Travellers
+                        The third step
                     </h2>
                     <p>
-                        All the accompanying travellers
-                    </p>
+                        Latest description of the project and uploading additional photos                    </p>
                     <div class="row">
                         <div class="col">
-                            <label>First Name <em>(according to passport)</em></label><input class="text"
-                                placeholder="Name" />
+                            <label>Project Description <em>  </em></label><input class="text"
+                                placeholder="Poject Description " />
                         </div>
                         <div class="col">
-                            <label>Last Name <em>(according to passport)</em></label><input class="text"
-                                placeholder="Last Name" />
+                            <label>Additional img 1</label><input class="text" type="file"  placeholder="file" />
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Additional img 2</label><input class="text" type="file"  placeholder="file" />
+                        </div>
+                        <div class="col">
+                            <label>Additional img 3</label><input class="text" type="file"  placeholder="file" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <label>Sex <em>(according to passport)</em></label>
-                            <div class="select-container">
-                                <select>
-                                    <option>
-                                        Choose
-                                    </option>
-                                    <option>
-                                        Man
-                                    </option>
-                                    <option>
-                                        Woman
-                                    </option>
-                                </select>
-                            </div>
+                            <label>Additional img 4</label><input class="text" type="file"  placeholder="file" />
                         </div>
                         <div class="col">
-                            <label>Date of Birth</label>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="select-container">
-                                        <select>
-                                            <option>
-                                                Year
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="select-container">
-                                        <select>
-                                            <option>
-                                                Month
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="select-container">
-                                        <select>
-                                            <option>
-                                                Day
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label>Passport Number</label><input class="text" placeholder="Really long number" />
-                        </div>
-                        <div class="col">
-                            <label>Expiracy</label>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="select-container">
-                                        <select>
-                                            <option>
-                                                Year
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="select-container">
-                                        <select>
-                                            <option>
-                                                Month
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="select-container">
-                                        <select>
-                                            <option>
-                                                Day
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+                            <label>Additional img 5</label><input class="text" type="file"  placeholder="file" />
                         </div>
                     </div>
                     <button class="continue" data-target="complete">Complete</button>
@@ -1861,6 +1744,10 @@
      #div1 {
             display: block;
         }
+        input.text {
+    opacity: 1;
+    position: relative;
+}
 </style>
 
 </body>
