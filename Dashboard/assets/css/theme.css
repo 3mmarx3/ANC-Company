@@ -4712,18 +4712,7 @@ fieldset:disabled .btn {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
 }
-.badge {
-    display: inline-block;
-    padding: 0.55em 0.9em;
-    font-size: 0.75em;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.45rem;
-}
+
 .badge:empty {
     display: none;
 }

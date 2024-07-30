@@ -444,7 +444,8 @@ form .buttons i.no {
 }
 .timeline .badge {
   font-size: 1.6rem;
-  margin-bottom: 1.5rem;
+  width: 50px;
+  height: 50px;
   transition: all 0.2s ease-in;
 }
 .timeline i.desc {
@@ -666,9 +667,7 @@ input[type="text"] {
 
 .comments {
   gap: 20px;
-  padding: 20px;
   margin: 20px 0;
-   background: #1c1f2f;
    border-radius: 10px;
 }
 
@@ -887,15 +886,10 @@ input[type="text"] {
         
       .walletBalanceCard {
     width: fit-content;
-    height: 55px;
-    background-color: white;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 12px;
-    padding: 0px 12px;
-    font-family: Arial, Helvetica, sans-serif;
   }
   .svgwrapper {
     width: 28px;
@@ -930,7 +924,7 @@ input[type="text"] {
   .addmoney {
     padding: 1px 15px;
     border-radius: 20px;
-    color: white;
+    color: #444A55;
     border: none;
     font-size: 12px;
     cursor: pointer;
@@ -940,11 +934,12 @@ input[type="text"] {
     justify-content: center;
     gap: 5px;
     padding: 10px;
+    background: none;
   }
-  .addmoney:hover {
+  /* .addmoney:hover {
     background-color: whitesmoke;
     color: #9c59cc;
-  }
+  } */
   .plussign {
     font-size: 20px;
     display: flex;
