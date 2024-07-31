@@ -1344,7 +1344,16 @@ button.button.icon {
   padding: 15px !important;
 }
 
-
+.badge {
+  display: inline-block;
+  text-align: center;
+  background: #cb0c9f;
+  position: relative;
+  z-index: 9;
+  padding: 0 5px;
+  border-radius: 3px;
+  color: white !important;
+}
 
 .icon-shape {
   display: flex;
@@ -1415,16 +1424,4 @@ img.error-img {
     overflow: hidden;
   }
 
-}
-
-
-.badge {
-  display: inline-block;
-  text-align: center;
-  background: #cb0c9f;
-  position: relative;
-  z-index: 9;
-  padding: 0 5px;
-  border-radius: 3px;
-  color: white !important;
 }
