@@ -15169,7 +15169,6 @@ fieldset:disabled .btn {
 }
 .card .card-body {
     font-family: Open Sans;
-    padding: 1.5rem;
 }
 .card.card-plain {
     background-color: transparent;
@@ -15836,7 +15835,6 @@ label {
     color: #fff;
     opacity: 0.8;
     top: 11px;
-    position: relative;
 }
 .icon-shape .ni {
     top: 14px;

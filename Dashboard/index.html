@@ -2,6 +2,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ANC-Dashboard Ui</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+ 
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css">
     <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css">
@@ -16,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start position-absolute ms-3 bg-white loopple-fixed-start"
+    <nav class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl  fixed-start position-absolute loopple-fixed-start"
         id="sidenav-main"><i
             class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
             aria-hidden="true" id="iconSidenav"></i>
@@ -134,6 +136,20 @@
                 </li>
 
 
+
+                <li class="nav-item">
+                    <a class="nav-link  " href="#" onclick="showDiv('div7')">
+                        <div
+                            class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3a416f" class="bi bi-x-octagon" viewBox="0 0 16 16">
+                                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"/>
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Email</span>
+                    </a>
+                </li>
+
             </ul>
             <!-- <div class="sidenav-footer mx-3 mt-2 position-sticky bottom-2 bg-white">
                 <div class="card card-plain px-0" id="sidenavCard">
@@ -190,30 +206,17 @@
 
     </nav>
     <div class="main-content" id="panel">
-        <!-- <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarTop">
+         <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarTop">
             <div class="container-fluid py-1 px-3">
-                <a class="navbar-brand" href="" rel="tooltip" title="Designed and Coded by Creative Tim"
+                <a class="navbar-brand" href="#" rel="tooltip" title="ANC-Dashboard Ui and Coded by Creative Tim"
                     data-placement="bottom" target="_blank">
-                    Soft UI Dashboard
-                </a>
+                    ANC-Dashboard Ui                </a>
                 <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
                     <ul class="navbar-nav  justify-content-start ms-md-auto">
 
 
-                        <li class="nav-item d-xl-none d-flex align-items-center">
-                            <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
-                                <div class="sidenav-toggler-inner">
-                                    <i class="sidenav-toggler-line"></i>
-                                    <i class="sidenav-toggler-line"></i>
-                                    <i class="sidenav-toggler-line"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item px-3 d-flex align-items-center">
-                            <a href="javascript:;" class="nav-link text-body p-0">
-                                <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer" aria-hidden="true"></i>
-                            </a>
-                        </li>
+                 
+                   
                         <li class="nav-item dropdown pe-4 d-flex align-items-center">
                             <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -298,17 +301,11 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="d-flex align-items-center">
-                        <div class="bg-white border-radius-lg d-flex">
-                            <input type="text" class="form-control border-0 ps-3" placeholder="Type here..."
-                                onfocus="focused(this)" onfocusout="defocused(this)">
-                            <button class="btn bg-gradient-primary my-1 me-1">Search</button>
-                        </div>
-                    </div>
+              
 
                 </div>
             </div>
-        </nav> -->
+        </nav> 
         <div class="container-fluid pt-3 content" id="div1">
             <div class="row removable">
                 <div class="col-xl-7">
@@ -346,7 +343,42 @@
                                             <i class="fab fa-github text-white" aria-hidden="true"></i>
                                         </a>
                                     </div>
+                                    
                                 </div>
+                                
+                            </div>
+                            <div class="grid_     mx-4 mt-3 ">
+                  
+                                <div >
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">New
+                                                        </span> <span class="h3 font-bold mb-0 number_" id="num">8</span></div>
+                                                <div class="col-auto">
+                                                    <div class="icon icon-shape bg-primary text-white text-lg rounded-circle"><i class="bi bi-people"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-2 mb-0 text-sm"><span class="badge badge-pill bg-soft-success text-success me-2"><i class="bi bi-arrow-up me-1"></i>23% </span><span class="text-nowrap text-xs text-muted">Since last week</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div >
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">Total
+                                                        hours</span> <span id="minutes" class="h3 font-bold mb-0">2</span> <span class="h3 font-bold mb-0">.</span> <span id="seconds" class="h3 font-bold mb-0">7</span>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="icon icon-shape bg-info text-white text-lg rounded-circle"><i class="bi bi-clock-history"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-2 mb-0 text-sm"><span class="badge badge-pill bg-soft-danger text-danger me-2"><i class="bi bi-arrow-down me-1"></i>-10% </span><span class="text-nowrap text-xs text-muted">Since last month</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                              
                             </div>
                         </div>
                         <!-- <div class="row mt-4">
@@ -362,7 +394,14 @@
                                 </p>
                             </div>
                         </div> -->
+
+                  
                     </div>
+
+                    
+
+
+
 
 
 
@@ -468,7 +507,11 @@
                     </div>
 
                 </div>
+          
             </div>
+
+
+          
         </div>
 
 
@@ -1467,6 +1510,188 @@
 
 
 
+
+        <div id="div7" class="content">
+            <div class="body-content flex flex-column">
+             
+              
+                <main class="flex flex-column gap-3 grow">
+                  <section class="flex gap-2 items-center justify-between">
+                    <div id="bulkActions" class="bulk-actions hidden items-center">
+                   
+              
+              
+                      <i class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                                ></path>
+                        </svg>
+                      </i>
+                    </div>
+              
+                    <h1 id="title" class="leading-none">Contacts</h1>
+              
+                    <div class="flex gap-1 items-center">
+                      <button class="button icon link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                                d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                                ></path>
+                        </svg>
+                      </button>
+              
+                      <button class="button icon link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                                d="M32,80a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H40A8,8,0,0,1,32,80Zm184,88H176V152a8,8,0,0,0-16,0v48a8,8,0,0,0,16,0V184h40a8,8,0,0,0,0-16Zm-80,0H40a8,8,0,0,0,0,16h96a8,8,0,0,0,0-16Zm-32-56a8,8,0,0,0,8-8V88H216a8,8,0,0,0,0-16H112V56a8,8,0,0,0-16,0v48A8,8,0,0,0,104,112Z"
+                                ></path>
+                        </svg>
+                      </button>
+              
+                      <button class="button icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fdfdfe" viewBox="0 0 256 256">
+                          <path
+                                d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z"
+                                ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </section>
+              
+                  <section class="flex flex-column gap-2">
+                    <table>
+                      <tr class="no-hover">
+                        <th></th>
+                        <th><span>ID</span></th>
+                        <th><span>First Name</span></th>
+                        <th><span>Last Name</span></th>
+                        <th><span>Email</span></th>
+                        <th><span>Mobile</span></th>
+                        <th><span>City</span></th>
+                        <th><span>Country</span></th>
+                      </tr>
+              
+                      <tr>
+                        <td><input class="input checkbox" type="checkbox" /></td>
+                        <td>1</td>
+                        <td>Esme</td>
+                        <td>Omond</td>
+                        <td>eomond0@mozilla.com</td>
+                        <td>+86 980 242 9909</td>
+                        <td>Linzi</td>
+                        <td>China</td>
+                      </tr>
+              
+                      <tr>
+                        <td><input class="input checkbox" type="checkbox" /></td>
+                        <td>2</td>
+                        <td>Lars</td>
+                        <td>Piniur</td>
+                        <td>ipiniur@zdnet.com</td>
+                        <td>+55 308 460 3711</td>
+                        <td>Porto Ferreiral</td>
+                        <td>Brazil</td>
+                      </tr>
+              
+                      <tr>
+                        <td><input class="input checkbox" type="checkbox" /></td>
+                        <td>3</td>
+                        <td>Bronny</td>
+                        <td>Debenham</td>
+                        <td>bdebenham1@posterous.com</td>
+                        <td>+63 834 882 1921</td>
+                        <td>Bualan</td>
+                        <td>Philippines</td>
+                      </tr>
+              
+                      <tr>
+                        <td><input class="input checkbox" type="checkbox" /></td>
+                        <td>4</td>
+                        <td>Liuka</td>
+                        <td>Tremberth</td>
+                        <td>ltremberth3@europa.eu</td>
+                        <td>+351 322 590 6526</td>
+                        <td>Arrabal</td>
+                        <td>Portugal</td>
+                      </tr>
+              
+                      <tr>
+                        <td><input class="input checkbox" type="checkbox" /></td>
+                        <td>5</td>
+                        <td>Nil</td>
+                        <td>Fansy</td>
+                        <td>nfansy4@harvard.edu</td>
+                        <td>+358 108 158 9715</td>
+                        <td>Ylöjärvi</td>
+                        <td>Finland</td>
+                      </tr>
+              
+                      <tr>
+                        <td><input class="input checkbox" type="checkbox" /></td>
+                        <td>6</td>
+                        <td>Sela</td>
+                        <td>Iacopini</td>
+                        <td>siacopini0@bizjournals.com</td>
+                        <td>+86 349 493 9373</td>
+                        <td>Dacheng</td>
+                        <td>China</td>
+                      </tr>
+              
+                      <tr>
+                        <td><input class="input checkbox" type="checkbox" /></td>
+                        <td>7</td>
+                        <td>Siana</td>
+                        <td>Pagelsen</td>
+                        <td>spagelsen2@sina.com.cn</td>
+                        <td>+27 539 451 8451</td>
+                        <td>Harding</td>
+                        <td>South Africa</td>
+                      </tr>
+              
+                      <tr>
+                        <td><input class="input checkbox" type="checkbox" /></td>
+                        <td>8</td>
+                        <td>May</td>
+                        <td>Backshall</td>
+                        <td>mbackshall3@cisco.com</td>
+                        <td>+43 577 282 7582</td>
+                        <td>Großklein</td>
+                        <td>Austria</td>
+                      </tr>
+              
+                      <tr>
+                        <td><input class="input checkbox" type="checkbox" /></td>
+                        <td>9</td>
+                        <td>Nilson</td>
+                        <td>Durek</td>
+                        <td>ndurek5@dedecms.com</td>
+                        <td>+256 102 622 9083</td>
+                        <td>Kalangala</td>
+                        <td>Uganda</td>
+                      </tr>
+              
+                      <tr>
+                        <td><input class="input checkbox" type="checkbox" /></td>
+                        <td>10</td>
+                        <td>Riane</td>
+                        <td>Cescot</td>
+                        <td>rcescot@craigslist.org</td>
+                        <td>+57 605 910 1253</td>
+                        <td>Jamundí</td>
+                        <td>Colombia</td>
+                      </tr>
+                    </table>
+              
+                  </section>
+                </main>
+              </div>
+        
+
+
+        </div>
+
+
         <!-- Footer -->
         <!-- <footer class="footer pt-3 pb-4">
             <div class="container-fluid">
@@ -1718,6 +1943,11 @@
             background-repeat: no-repeat;
             background-position: center center;
         }
+        /*  */
+
+
     </style>
+   
+
 
 </body>
