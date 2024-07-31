@@ -1167,7 +1167,7 @@ nav#sidenav-main {
   margin: 0 auto;
   max-width: 100rem;
   min-height: 100vh;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 
 
@@ -1256,7 +1256,7 @@ th:last-of-type {
 }
 
 th {
-  color: var(--color-primary-4);
+  color: var(--bs-primary) !important;
   font-size: .75rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -1424,4 +1424,8 @@ img.error-img {
     overflow: hidden;
   }
 
+}
+
+button.back {
+  margin-bottom: 10vh;
 }
