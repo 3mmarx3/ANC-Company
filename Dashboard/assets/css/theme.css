@@ -16341,7 +16341,7 @@ hr.horizontal.gray-light {
     padding-left: 1rem;
     padding-right: 1rem;
     font-weight: 500;
-    color: var(--bs-body-color);
+    /* color: var(--bs-body-color); */
 }
 .navbar-vertical .navbar-nav .nav-link > i {
     min-width: 1.8rem;
