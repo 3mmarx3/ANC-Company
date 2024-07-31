@@ -1002,3 +1002,61 @@ nav#sidenav-main {
 .loopple-badge{
     display: flex;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+  span.nav-link-text.ms-1 {
+    display: none;
+}
+.navbar-vertical.navbar-expand-xs .navbar-nav .nav-link {
+  padding-top: 0; 
+  padding-bottom: 0;
+margin: 0;
+}
+.navbar-vertical.navbar-expand-xs{
+  max-width: 100% !important;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+ 
+}
+nav#sidenav-main {
+  position: static !important;
+}
+li.nav-item.mt-3,.sidenav .navbar-brand {
+  display: none;
+}
+.col-md-10.mx-auto {
+  display: block;
+}
+.layout.two.svelte-4ubdxg.gap.grid_3 {
+  grid-template-columns: 1fr;
+}
+div#div1 {
+  padding: 0;
+
+}
+h1 {
+  font-size: x-large;
+}
+.container.svelte-8p0mpe {
+  padding: 0;
+}
+.card.card-profile.p-3.mb-4 {
+  padding: 0 !important;
+}
+.col-auto.my-auto {
+  margin-top: 3vh !important;
+}
+}
