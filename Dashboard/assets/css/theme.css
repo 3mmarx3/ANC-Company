@@ -98,7 +98,7 @@ h6 {
   margin-bottom: 0.5rem;
   font-weight: 400;
   line-height: 1.2;
-  color: var(--bs-dark);
+  color: white;
 }
 .h1,
 h1 {
@@ -7931,9 +7931,7 @@ fieldset:disabled .btn {
 .text-body {
   color: #e6b595 !important;
 }
-.text-muted {
-  color: #6c757d !important;
-}
+
 .bg-primary {
   background-color: #e6b595 !important;
 }
@@ -7958,10 +7956,10 @@ fieldset:disabled .btn {
 .bg-dark {
   background-color: var(--bs-dark) !important;
 }
-.bg-body,
+/* .bg-body,
 .bg-white {
   background-color: #fff !important;
-}
+} */
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -16453,7 +16451,8 @@ hr.horizontal.gray-light {
 }
 .navbar .nav-link,
 .navbar .navbar-brand {
-  color: var(--bs-dark);
+  /* color: var(--bs-dark); */
+  color: white;
   font-size: 0.875rem;
 }
 .navbar .nav-link {
@@ -16670,8 +16669,6 @@ hr.horizontal.gray-light {
   right: 0;
 }
 .navbar-vertical.navbar-expand-xs .navbar-nav .nav-link {
-  padding-top: 0.675rem;
-  padding-bottom: 0.675rem;
   margin: 0 1rem;
 }
 .navbar-vertical.navbar-expand-xs .navbar-nav .nav-link .nav-link-text,
@@ -17591,9 +17588,6 @@ hr.horizontal.gray-light {
   opacity: 0;
 }
 @media (min-width: 1200px) {
-  .navbar-vertical .navbar-nav .nav-item .nav-link .icon {
-    padding: 10px;
-  }
   .g-sidenav-hidden.rtl .main-content {
     margin-right: 6rem !important;
   }
@@ -18939,9 +18933,7 @@ p {
 .blockquote > span {
   font-style: italic;
 }
-.text-muted {
-  color: var(--bs-body-color) !important;
-}
+
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5) !important;
 }
