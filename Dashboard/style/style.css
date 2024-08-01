@@ -698,7 +698,6 @@ body {
 .flex.ptn {
   display: flex;
   gap: 20px;
-  width: 50%;
   flex-flow: wrap;
 }
 

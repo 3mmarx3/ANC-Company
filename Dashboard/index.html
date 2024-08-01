@@ -1,171 +1,277 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ANC-Dashboard Ui</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>ANC-Dashboard Ui</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+  />
 
-    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css">
-    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-    <link rel="stylesheet" href="./assets/css/theme.css">
-    <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/style.css">
-
-
+  <script
+    src="https://kit.fontawesome.com/42d5adcbca.js"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+  />
+  <link rel="stylesheet" href="./assets/css/theme.css" />
+  <link rel="stylesheet" href="./assets/css/loopple/loopple.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style/main.css" />
+  <link rel="stylesheet" href="./style/style.css" />
 </head>
 
 <body>
+  <div class="phone" style="display: none">
+    <div class="error-content-area">
+      <div class="img_gif">
+        <img
+          class="error-img"
+          src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif"
+          alt="File Not Found"
+        />
+      </div>
 
-
-
-
-
-    <div class="phone" style="display: none;">
-
-        <div class="error-content-area">
-
-
-            <div class="img_gif">
-                <img class="error-img" src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif"
-                    alt="File Not Found">
-
-            </div>
-
-
-            <div class="error-content">
-                <h3>The page cannot be opened</h3>
-                <p>Open this page on a computer or laptop .</p>
-            </div>
-        </div>
+      <div class="error-content">
+        <h3>The page cannot be opened</h3>
+        <p>Open this page on a computer or laptop .</p>
+      </div>
     </div>
+  </div>
 
+  <div id="pc">
+    <nav
+      class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl fixed-start position-absolute loopple-fixed-start"
+      id="sidenav-main"
+    >
+      <i
+        class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true"
+        id="iconSidenav"
+      ></i>
+      <a class="navbar-brand m-0" href="javascript:;">
+        <img src="./img/logo.png" class="navbar-brand-img h-100" alt="..." />
+      </a>
 
-
-    <div id="pc">
-        <nav class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl  fixed-start position-absolute loopple-fixed-start"
-            id="sidenav-main"><i
-                class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
-                aria-hidden="true" id="iconSidenav"></i>
-            <a class="navbar-brand m-0" href="javascript:;">
-                <img src="./img/logo.png" class="navbar-brand-img h-100" alt="...">
+      <hr class="horizontal dark mt-0" />
+      <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link active toggle-button"
+              href="#"
+              onclick="showDiv('div1')"
+            >
+              <div
+                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill="currentColor"
+                  class="bi bi-speedometer2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"
+                  />
+                </svg>
+              </div>
+              <span class="nav-link-text ms-1">Dashboard</span>
             </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link toggle-button"
+              href="#"
+              onclick="showDiv('div2')"
+            >
+              <div
+                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill="#3a416f"
+                  class="bi bi-house"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+                  />
+                </svg>
+              </div>
+              <span class="nav-link-text ms-1">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link toggle-button"
+              href="#"
+              onclick="showDiv('div3')"
+            >
+              <div
+                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill="currentColor"
+                  class="bi bi-bag-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5"
+                  />
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
+                  />
+                </svg>
+              </div>
+              <span class="nav-link-text ms-1">Add Project</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link toggle-button"
+              href="#"
+              onclick="showDiv('div4')"
+            >
+              <div
+                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#3a416f"
+                  class="bi bi-cloud-arrow-up-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </div>
+              <span class="nav-link-text ms-1">Upload clients</span>
+            </a>
+          </li>
+          <li class="nav-item mt-3">
+            <h6
+              class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6 ceo"
+            >
+              Account pages
+            </h6>
+          </li>
 
-            <hr class="horizontal dark mt-0">
-            <div class="collapse navbar-collapse  w-auto" id="sidenav-collapse-main">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link  active toggle-button" href="#" onclick="showDiv('div1')">
-                            <div
-                                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
-                                    <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/>
-                                    <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/>
-                                  </svg>
-                            </div>
-                            <span class="nav-link-text ms-1">Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link toggle-button " href="#" onclick="showDiv('div2')" >
-                            <div
-                                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#3a416f"
-                                    class="bi bi-house" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
-                                </svg>
-                            </div>
-                            <span class="nav-link-text ms-1">Home</span>
+          <li class="nav-item">
+            <a
+              class="nav-link toggle-button"
+              href="#"
+              onclick="showDiv('div5')"
+            >
+              <div
+                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#3a416f"
+                  class="bi bi-image-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"
+                  />
+                </svg>
+              </div>
 
+              <span class="nav-link-text ms-1">images Page</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link toggle-button"
+              href="#"
+              onclick="showDiv('div6')"
+            >
+              <div
+                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#3a416f"
+                  class="bi bi-x-octagon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"
+                  />
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+              </div>
+              <span class="nav-link-text ms-1">Delet Project</span>
+            </a>
+          </li>
 
-
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link toggle-button " href="#" onclick="showDiv('div3')">
-                            <div
-                                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5"/>
-                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                                  </svg>
-                            </div>
-                            <span class="nav-link-text ms-1">Add Project</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link toggle-button " href="#" onclick="showDiv('div4')">
-                            <div
-                                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3a416f"
-                                    class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z" />
-                                </svg>
-                            </div>
-                            <span class="nav-link-text ms-1">Upload clients</span>
-                        </a>
-                    </li>
-                    <li class="nav-item mt-3">
-                        <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6 ceo">Account pages</h6>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link  toggle-button" href="#" onclick="showDiv('div5')">
-                            <div
-                                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3a416f"
-                                    class="bi bi-image-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
-                                </svg>
-                            </div>
-
-
-
-
-                            <span class="nav-link-text ms-1">images Page</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  toggle-button" href="#" onclick="showDiv('div6')">
-                            <div
-                                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3a416f"
-                                    class="bi bi-x-octagon" viewBox="0 0 16 16">
-                                    <path
-                                        d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z" />
-                                    <path
-                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                                </svg>
-                            </div>
-                            <span class="nav-link-text ms-1">Delet Project</span>
-                        </a>
-                    </li>
-
-
-
-                    <li class="nav-item">
-                        <a class="nav-link toggle-button " href="#" onclick="showDiv('div7')">
-                            <div
-                                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3a416f"
-                                    class="bi bi-envelope-check" viewBox="0 0 16 16">
-                                    <path
-                                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
-                                    <path
-                                        d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686" />
-                                </svg>
-                            </div>
-                            <span class="nav-link-text ms-1">Email</span>
-                        </a>
-                    </li>
-
-                </ul>
-                <!-- <div class="sidenav-footer mx-3 mt-2 position-sticky bottom-2 bg-white">
+          <li class="nav-item">
+            <a
+              class="nav-link toggle-button"
+              href="#"
+              onclick="showDiv('div7')"
+            >
+              <div
+                class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#3a416f"
+                  class="bi bi-envelope-check"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
+                  />
+                  <path
+                    d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"
+                  />
+                </svg>
+              </div>
+              <span class="nav-link-text ms-1">Email</span>
+            </a>
+          </li>
+        </ul>
+        <!-- <div class="sidenav-footer mx-3 mt-2 position-sticky bottom-2 bg-white">
                 <div class="card card-plain px-0" id="sidenavCard">
                     <div class="card-body text-left p-3 pt-0 w-100">
                         <hr class="horizontal dark mt-1">
@@ -216,246 +322,292 @@
                     </div>
                 </div>
             </div> -->
+      </div>
+    </nav>
+    <div class="main-content" id="panel">
+      <nav
+        class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl"
+        id="navbarTop"
+      >
+        <div class="container-fluid py-1 px-3">
+          <a
+            class="navbar-brand ceo"
+            href="#"
+            rel="tooltip"
+            title="ANC-Dashboard Ui and Coded by Creative Tim"
+            data-placement="bottom"
+            target="_blank"
+          >
+            ANC-Dashboard Ui
+          </a>
+          <div
+            class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4"
+            id="navbar"
+          >
+            <ul class="navbar-nav justify-content-start ms-md-auto">
+              <li class="nav-item dropdown pe-4 d-flex align-items-center">
+                <a
+                  href="javascript:;"
+                  class="nav-link text-body p-0"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-bell cursor-pointer" aria-hidden="true"></i>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end px-2 py-3 me-sm-n4"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li class="mb-2">
+                    <a
+                      class="dropdown-item border-radius-md"
+                      href="javascript:;"
+                    >
+                      <div class="d-flex py-1">
+                        <div class="d-flex flex-column justify-content-center">
+                          <h6 class="text-sm font-weight-normal mb-1">
+                            <span class="font-weight-bold">New message</span>
+                            from Laur
+                          </h6>
+                          <p class="text-xs text-secondary mb-0">
+                            <i class="fa fa-clock me-1" aria-hidden="true"></i>
+                            13 minutes ago
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="dropdown-item border-radius-md"
+                      href="javascript:;"
+                    >
+                      <div class="d-flex py-1">
+                        <div class="d-flex flex-column justify-content-center">
+                          <h6 class="text-sm font-weight-normal mb-1">
+                            <span class="font-weight-bold">New album</span> by
+                            Travis Scott
+                          </h6>
+                          <p class="text-xs text-secondary mb-0">
+                            <i class="fa fa-clock me-1" aria-hidden="true"></i>
+                            1 day
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item border-radius-md"
+                      href="javascript:;"
+                    >
+                      <div class="d-flex py-1">
+                        <div class="d-flex flex-column justify-content-center">
+                          <h6 class="text-sm font-weight-normal mb-1">
+                            Payment successfully completed
+                          </h6>
+
+                          <p class="text-xs text-secondary mb-0">
+                            <i class="fa fa-clock me-1" aria-hidden="true"></i>
+                            2 days
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid pt-3 content" id="div1">
+        <div class="row removable">
+          <div class="col-xl-7">
+            <div class="card card-profile p-3 mb-4">
+              <div
+                class="min-height-200 border-radius-xl page-header"
+                style="
+                  background-image: url('https://demos.creative-tim.com/soft-ui-dashboard-pro/assets/img/curved-images/curved0.jpg');
+                  background-position-y: 50%;
+                "
+              >
+                <span class="mask bg-gradient-primary opacity-6"></span>
+              </div>
+              <div
+                class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden"
+              >
+                <div class="row gx-4">
+                  <div class="col-auto">
+                    <div
+                      class="avatar avatar-xl position-relative"
+                      style="background-image: url(./img/eng-1.png)"
+                    ></div>
+                  </div>
+                  <div class="col-auto my-auto">
+                    <div class="h-100">
+                      <h5 class="mb-1">Eng - Mohamed Nassar</h5>
+                      <p class="mb-0 font-weight-bold text-sm">
+                        CEO / ANC-Company
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="d-flex mt-4">
+                      <a href="#" class="btn btn-icon-only btn-facebook">
+                        <i
+                          class="fab fa-facebook text-white"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                      <a href="#" class="btn btn-icon-only btn-twitter ms-2">
+                        <i
+                          class="fab fa-twitter text-white"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                      <a href="#" class="btn btn-icon-only btn-github ms-2">
+                        <i
+                          class="fab fa-github text-white"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </div>
+
+                    <div class="mt-2">
+                      <div>
+                        <div class="card">
+                          <div>
+                            <div class="row">
+                              <div class="col">
+                                <span
+                                  class="h6 font-semibold text-muted text-sm d-block mb-2"
+                                  >New clients
+                                </span>
+                                <span class="h3 font-bold mb-0 number_" id="num"
+                                  >8</span
+                                >
+                              </div>
+                              <div class="col-auto">
+                                <div
+                                  class="icon icon-shape bg-primary text-white text-lg rounded-circle"
+                                >
+                                  <i class="bi bi-people"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mt-2 mb-0 text-sm">
+                              <span
+                                class="badge badge-pill bg-soft-success text-success me-2"
+                                ><i class="bi bi-arrow-up me-1"></i>23% </span
+                              ><span class="text-nowrap text-xs text-muted"
+                                >Since last week</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-5">
+            <div class="card mb-4">
+              <div class="pb-0 p-3">
+                <h6
+                  class="text-uppercase text-xs font-weight-bolder opacity-6 ceo"
+                >
+                  Login Dashboard
+                </h6>
+              </div>
+              <div class="card-body p-3">
+                <ul class="list-group">
+                  <li class="border-0 d-flex align-items-center px-0 mb-2">
+                    <div
+                      class="avatar me-3"
+                      style="background-image: url(./img/eng-1.png)"
+                    ></div>
+                    <div
+                      class="d-flex align-items-start flex-column justify-content-center"
+                    >
+                      <h6
+                        class="text-uppercase text-xs font-weight-bolder opacity-6"
+                      >
+                        Eng - Mohamed Nassar
+                      </h6>
+                      <p class="text-xs mb-0 text-primary">user@user.com</p>
+                    </div>
+                    <!-- <a class="btn btn-link btn-sm ms-auto" href="javascript:;">Send message</a> -->
+                  </li>
+                  <li class="border-0 d-flex align-items-center px-0 mb-2">
+                    <div
+                      class="avatar me-3"
+                      style="background-image: url(./img/eng-1.png)"
+                    ></div>
+                    <div
+                      class="d-flex align-items-start flex-column justify-content-center"
+                    >
+                      <h6
+                        class="text-uppercase text-xs font-weight-bolder opacity-6"
+                      >
+                        Eng - Mohamed Nassar
+                      </h6>
+                      <p class="text-xs mb-0 text-primary">user@user.com</p>
+                    </div>
+                    <!-- <a class="btn btn-link btn-sm ms-auto" href="javascript:;">Send message</a> -->
+                  </li>
+                  <li class="border-0 d-flex align-items-center px-0 mb-0">
+                    <div
+                      class="avatar me-3"
+                      style="background-image: url(./img/eng-1.png)"
+                    ></div>
+
+                    <div
+                      class="d-flex align-items-start flex-column justify-content-center"
+                    >
+                      <h6
+                        class="text-uppercase text-xs font-weight-bolder opacity-6"
+                      >
+                        Eng - Mohamed Nassar
+                      </h6>
+                      <p class="text-xs mb-0 text-primary">user@user.com</p>
+                    </div>
+                    <!-- <a class="btn btn-link btn-sm ms-auto" href="javascript:;">Send message</a> -->
+                  </li>
+                </ul>
+              </div>
             </div>
 
-        </nav>
-        <div class="main-content" id="panel">
-            <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarTop">
-                <div class="container-fluid py-1 px-3">
-                    <a class="navbar-brand ceo" href="#" rel="tooltip" title="ANC-Dashboard Ui and Coded by Creative Tim"
-                        data-placement="bottom" target="_blank">
-                        ANC-Dashboard Ui </a>
-                    <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-                        <ul class="navbar-nav  justify-content-start ms-md-auto">
-
-
-
-
-                            <li class="nav-item dropdown pe-4 d-flex align-items-center">
-                                <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa fa-bell cursor-pointer" aria-hidden="true"></i>
-                                </a>
-                                <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4"
-                                    aria-labelledby="dropdownMenuButton">
-                                    <li class="mb-2">
-                                        <a class="dropdown-item border-radius-md" href="javascript:;">
-                                            <div class="d-flex py-1">
-
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="text-sm font-weight-normal mb-1">
-                                                        <span class="font-weight-bold">New message</span> from Laur
-                                                    </h6>
-                                                    <p class="text-xs text-secondary mb-0 ">
-                                                        <i class="fa fa-clock me-1" aria-hidden="true"></i>
-                                                        13 minutes ago
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a class="dropdown-item border-radius-md" href="javascript:;">
-                                            <div class="d-flex py-1">
-
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="text-sm font-weight-normal mb-1">
-                                                        <span class="font-weight-bold">New album</span> by Travis Scott
-                                                    </h6>
-                                                    <p class="text-xs text-secondary mb-0 ">
-                                                        <i class="fa fa-clock me-1" aria-hidden="true"></i>
-                                                        1 day
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item border-radius-md" href="javascript:;">
-                                            <div class="d-flex py-1">
-
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="text-sm font-weight-normal mb-1">
-                                                        Payment successfully completed
-                                                    </h6>
-                                                    
-                                                    <p class="text-xs text-secondary mb-0 ">
-                                                        <i class="fa fa-clock me-1" aria-hidden="true"></i>
-                                                        2 days
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-
-
-                    </div>
+            <div class="card_">
+              <div class="pb-0 p-3">
+                <div class="d-flex align-items-center">
+                  <h6
+                    class="text-uppercase text-xs font-weight-bolder opacity-6 ceo"
+                  >
+                    More Details
+                  </h6>
                 </div>
-            </nav>
-            <div class="container-fluid pt-3 content" id="div1">
-                <div class="row removable">
-                    <div class="col-xl-7">
-                        <div class="card card-profile p-3 mb-4">
-                            <div class="min-height-200 border-radius-xl page-header"
-                                style="background-image: url('https://demos.creative-tim.com/soft-ui-dashboard-pro/assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
-                                <span class="mask bg-gradient-primary opacity-6"></span>
-                            </div>
-                            <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
-                                <div class="row gx-4">
-                                    <div class="col-auto">
-                                        <div class="avatar avatar-xl position-relative"
-                                            style="background-image: url(./img/eng-1.png);">
+              </div>
 
-                                        </div>
-                                    </div>
-                                    <div class="col-auto my-auto">
-                                        <div class="h-100">
-                                            <h5 class="mb-1">
-                                                Eng - Mohamed Nassar </h5>
-                                            <p class="mb-0 font-weight-bold text-sm">
-                                                CEO / ANC-Company
-                                            </p>
-                                        </div>
-                                    </div>
+              <div class="card-body p-3">
+                <div class="d-flex align-items-center">
+                  <i class="fa fa-envelope opacity-7" aria-hidden="true"></i>
+                  <div class="ms-3">
+                    <h6
+                      class="text-uppercase text-xs font-weight-bolder opacity-6"
+                    >
+                      Email
+                    </h6>
+                    <p class="text-xs mb-0 text-primary">user@user.com</p>
+                  </div>
+                </div>
 
-                                    <div >
-                                        <div class="d-flex  mt-4">
-                                            <a href="#" class="btn btn-icon-only btn-facebook">
-                                                <i class="fab fa-facebook text-white" aria-hidden="true"></i>
-                                            </a>
-                                            <a href="#" class="btn btn-icon-only btn-twitter ms-2">
-                                                <i class="fab fa-twitter text-white" aria-hidden="true"></i>
-                                            </a>
-                                            <a href="#" class="btn btn-icon-only btn-github ms-2">
-                                                <i class="fab fa-github text-white" aria-hidden="true"></i>
-                                            </a>
-
-                                            
-                                        </div>
-
-                                        <div class="mt-2 ">
-
-                                            <div>
-                                                <div class="card">
-                                                    <div>
-                                                        <div class="row">
-                                                            <div class="col"><span
-                                                                    class="h6 font-semibold text-muted text-sm d-block mb-2">New
-                                                                    clients
-                                                                </span> <span class="h3 font-bold mb-0 number_"
-                                                                    id="num">8</span></div>
-                                                            <div class="col-auto">
-                                                                <div
-                                                                    class="icon icon-shape bg-primary text-white text-lg rounded-circle">
-                                                                    <i class="bi bi-people"></i></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mt-2 mb-0 text-sm"><span
-                                                                class="badge badge-pill bg-soft-success text-success me-2"><i
-                                                                    class="bi bi-arrow-up me-1"></i>23% </span><span
-                                                                class="text-nowrap text-xs text-muted">Since last week</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-        
-        
-                                        </div>
-                                    </div>
-                                    
-
-                                </div>
-                              
-                            </div>
-                        
-
-                        </div>
-
-
-
-
-
-
-
-
-                    </div>
-
-                    <div class="col-xl-5">
-                        <div class="card mb-4">
-                            <div class="  pb-0 p-3">
-                                <h6 class="text-uppercase text-xs font-weight-bolder opacity-6 ceo">Login Dashboard</h6>
-                            </div>
-                            <div class="card-body p-3">
-                                <ul class="list-group">
-                                    <li class="  border-0 d-flex align-items-center px-0 mb-2">
-                                        <div class="avatar me-3" style="background-image: url(./img/eng-1.png);">
-
-                                        </div>
-                                        <div class="d-flex align-items-start flex-column justify-content-center">
-                                            <h6 class="text-uppercase text-xs font-weight-bolder opacity-6">Eng -
-                                                Mohamed
-                                                Nassar
-                                            </h6>
-                                            <p class="text-xs mb-0 text-primary">user@user.com</p>
-                                        </div>
-                                        <!-- <a class="btn btn-link btn-sm ms-auto" href="javascript:;">Send message</a> -->
-                                    </li>
-                                    <li class="  border-0 d-flex align-items-center px-0 mb-2">
-                                        <div class="avatar me-3" style="background-image: url(./img/eng-1.png);">
-
-                                        </div>
-                                        <div class="d-flex align-items-start flex-column justify-content-center">
-                                            <h6 class="text-uppercase text-xs font-weight-bolder opacity-6">Eng -
-                                                Mohamed
-                                                Nassar
-                                            </h6>
-                                            <p class="text-xs mb-0 text-primary">user@user.com</p>
-                                        </div>
-                                        <!-- <a class="btn btn-link btn-sm ms-auto" href="javascript:;">Send message</a> -->
-                                    </li>
-                                    <li class="  border-0 d-flex align-items-center px-0 mb-0">
-                                        <div class="avatar me-3" style="background-image: url(./img/eng-1.png);">
-
-                                        </div>
-
-                                        <div class="d-flex align-items-start flex-column justify-content-center">
-                                            <h6 class="text-uppercase text-xs font-weight-bolder opacity-6">Eng -
-                                                Mohamed
-                                                Nassar
-                                            </h6>
-                                            <p class="text-xs mb-0 text-primary">user@user.com</p>
-                                        </div>
-                                        <!-- <a class="btn btn-link btn-sm ms-auto" href="javascript:;">Send message</a> -->
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                        <div class="card_">
-                            <div class="  pb-0 p-3">
-                                <div class="d-flex align-items-center">
-                                    <h6 class="text-uppercase text-xs font-weight-bolder opacity-6 ceo">More Details</h6>
-                                </div>
-                            </div>
-
-
-
-
-
-                            <div class="card-body p-3">
-                                <div class="d-flex align-items-center">
-                                    <i class="fa fa-envelope opacity-7" aria-hidden="true"></i>
-                                    <div class="ms-3">
-                                        <h6 class="text-uppercase text-xs font-weight-bolder opacity-6">Email</h6>
-                                        <p class="text-xs mb-0 text-primary">user@user.com</p>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="d-flex align-items-center mt-4">
+                <!-- <div class="d-flex align-items-center mt-4">
                                 <i class="fa fa-globe-europe opacity-7" aria-hidden="true"></i>
                                 <div class="ms-3">
                                     <h6 class="mb-0">Languages</h6>
@@ -464,17 +616,24 @@
                                 </div>
                             </div> -->
 
-                                <div class="d-flex align-items-center mt-4">
-                                    <i class="fa fa-user-graduate opacity-7" aria-hidden="true"></i>
-                                    <div class="ms-3">
-                                        <h6 class="text-uppercase text-xs font-weight-bolder opacity-6">Name</h6>
-                                        <span class="text-xs mb-0 text-primary">Eng - Mohamed Nassar
+                <div class="d-flex align-items-center mt-4">
+                  <i
+                    class="fa fa-user-graduate opacity-7"
+                    aria-hidden="true"
+                  ></i>
+                  <div class="ms-3">
+                    <h6
+                      class="text-uppercase text-xs font-weight-bolder opacity-6"
+                    >
+                      Name
+                    </h6>
+                    <span class="text-xs mb-0 text-primary"
+                      >Eng - Mohamed Nassar
+                    </span>
+                  </div>
+                </div>
 
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="d-flex align-items-center mt-4">
+                <!-- <div class="d-flex align-items-center mt-4">
                                 <i class="fa fa-wrench opacity-7" aria-hidden="true"></i>
                                 <div class="ms-3">
                                     <h6 class="text-uppercase text-xs font-weight-bolder opacity-6">More Details</h6>
@@ -482,894 +641,949 @@
                                     </span>
                                 </div>
                             </div> -->
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
+      <div id="div2" class="content">
+        <div class="container text-center">
+          <h1>uploading photos or videos on the main page of the site</h1>
 
-
-
-            <div id="div2" class="content">
-                <div class="container text-center">
-
-                    <h1>uploading photos or videos on the main page of the site</h1>
-
-
-
-                    <p> You can upload an image or video as desired in the <code>upload files</code> in order</p>
-                    <div class="row">
-                        <div class="col-md-10 mx-auto">
-                            <section>
-                                <h5 class="mb-3 font-weight-bold">One video || photos</h5>
-                                <div class="file-uploader p-3 mb-5">
-                                    <div
-                                        class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
-                                        <span class="fa-stack fa-lg">
-                                            <span class="primary-icon fas fa-image fa-stack-2x"></span>
-                                            <span class="downloading-icon fas fa-chevron-down fa-stack-1x"></span>
-                                        </span>
-                                    </div>
-                                    <div class="file-uploader-body mb-2">
-                                        <p class="file-upload-instructions">
-                                            <input type="file">
-                                            <span class="hide-non-touch">uploading photos or videos </span>
-                                        </p>
-                                    </div>
-                                    <div class="file-uploader-footer">
-                                        <p><small>PNG, JPG, GIF files up to 20MB allowed</small></p>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section>
-                                <h5 class="mb-3 font-weight-bold">Tow video || photos</h5>
-                                <div class="file-uploader p-3 mb-5">
-                                    <div
-                                        class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
-                                        <span class="fa-stack fa-lg">
-                                            <span class="primary-icon fas fa-image fa-stack-2x"></span>
-                                            <span class="downloading-icon fas fa-chevron-down fa-stack-1x"></span>
-                                        </span>
-                                    </div>
-                                    <div class="file-uploader-body mb-2">
-                                        <p class="file-upload-instructions">
-                                            <input type="file">
-                                            <span class="hide-non-touch">uploading photos or videos </span>
-                                        </p>
-                                    </div>
-                                    <div class="file-uploader-footer">
-                                        <p><small>PNG, JPG, GIF files up to 20MB allowed</small></p>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section>
-                                <h5 class="mb-3 font-weight-bold">One video || photos</h5>
-                                <div class="file-uploader p-3 mb-5">
-                                    <div
-                                        class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
-                                        <span class="fa-stack fa-lg">
-                                            <span class="primary-icon fas fa-image fa-stack-2x"></span>
-                                            <span class="downloading-icon fas fa-chevron-down fa-stack-1x"></span>
-                                        </span>
-                                    </div>
-                                    <div class="file-uploader-body mb-2">
-                                        <p class="file-upload-instructions">
-                                            <input type="file">
-                                            <span class="hide-non-touch">uploading photos or videos </span>
-                                        </p>
-                                    </div>
-                                    <div class="file-uploader-footer">
-                                        <p><small>PNG, JPG, GIF files up to 20MB allowed</small></p>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-            <div id="div3" class="content">
-                <form autocomplete="on" class="container step-form" id="form">
-                    <h1>Upload the design with all its details</h1>
-                    <p>Make sure all files are filled out </p>
-                    <div class="timeline" id="timeline">
-                        <div class="row">
-                            <div class="col on step_1">
-                                <p class="badge circle">1</p>
-                            </div>
-                            <div class="col step_2">
-                                <p class="badge circle">2</p>
-                            </div>
-                            <div class="col step_4 complete">
-                                <p class="badge circle">4</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step" id="step_1">
-                        <h2>The first step</h2>
-                        <br>
-                        <p>is to upload the basic image, the name of the project, and the first popular description </p>
-                        <br>
-                        <div class="row">
-                            <div class="col">
-                                <label>cover img <em> </em></label><input type="file" class="text" placeholder="file" />
-                            </div>
-                            <div class="col">
-                                <label>category <em> </em></label>
-                                <select class="text" placeholder="category">
-                                    <option value="architectural-design">Architectural Design</option>
-                                    <option value="interiors-design">Interiors Design</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <label>main img <em> </em></label><input type="file" class="text" placeholder="file" />
-                            </div>
-                            <div class="col">
-                                <label>project Name <em> </em></label><input class="text" placeholder="project Name " />
-                            </div>
-                        </div>
-                        <button class="continue" data-target="step_2">Continue</button>
-                    </div>
-                    <div class="step hidden" id="step_2">
-                        <h2>The second step</h2>
-                        <p>Add description or pictures in order </p>
-                        
-
-                        
-
- 
-
-
-
-                        <div id="formContainer" class="row">
-                            <!-- Existing content goes here -->
-                        </div>
-                        
-                      
-                          
-                    <style>
-                                .row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .col {
-            flex: 1;
-            margin: 10px;
-            position: relative; /* For positioning the delete button */
-        }
-        .col label, .col input {
-            display: block;
-            width: 100%;
-        }
-        .delete-btn {
-            position: absolute;
-            top: 10px;
-            right: -10px;
-            background-color: #f44336;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-    </style>
-
-                        <br>
-                        <button onclick="addBigImg()">Add  Img</button>
-
-                        <button onclick="addProjectDescription()">Add Description</button>
-                        <button class="back" data-target="step_1">Back</button>
-                        <button class="continue" data-target="step_4">Continue</button>
-                    </div>
-                    <div class="step hidden complete" id="step_4">
-                        <h2>Completed</h2>
-                        <p>Click Upload to send to the site</p>
-                        <img src="https://cdn.dribbble.com/users/195239/screenshots/2794760/high-five.gif" style="width:100%;max-width:40%;margin-bottom:2rem;border:1px solid #ddd" />
-                        <button class="reset">Upload</button>
-                        <button class="outline view-all">View all form steps</button>
-                    </div>
-                </form>
-            </div>
-            
-         
-
-
-
-            <div id="div4" class="content">
-
-
-
-                <div class="container text-center">
-
-                    <h1>Upload and delete clients</h1>
-
-                    <p> Add a photo, the client’s name, and his profession, and you can <code>add</code> and
-                        <code>delete</code> it at any time
+          <p>
+            You can upload an image or video as desired in the
+            <code>upload files</code> in order
+          </p>
+          <div class="row">
+            <form action="#" class="col-md-10 mx-auto">
+              <section>
+                <h5 class="mb-3 font-weight-bold">One video || photos</h5>
+                <div class="file-uploader p-3 mb-5">
+                  <div
+                    class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center"
+                  >
+                    <span class="fa-stack fa-lg">
+                      <span
+                        class="primary-icon fas fa-image fa-stack-2x"
+                      ></span>
+                      <span
+                        class="downloading-icon fas fa-chevron-down fa-stack-1x"
+                      ></span>
+                    </span>
+                  </div>
+                  <div class="file-uploader-body mb-2">
+                    <p class="file-upload-instructions">
+                      <input type="file" />
+                      <span class="hide-non-touch"
+                        >uploading photos or videos
+                      </span>
                     </p>
-
-                    <div class="flex ptn">
-
-
-
-                        <div class="walletBalanceCard" type="button" onclick="addElement()">
-
-
-
-
-                            <button >Add clients</button>
-                        </div>
-
-                        <div class="walletBalanceCard" type="button" onclick="removeElement()">
-
-
-
-
-                            <button >Delet clients</button>
-                        </div>
-
-
-
-
-                        <form class="form-container" enctype='multipart/form-data' id="container">
-                            <template id="inputFileTemplate">
-                                <div class="card">
-                                    <div class="comments">
-
-                                        <div class="comment-container">
-                                            <div class="user">
-                                                <div class="user-pic">
-                                                    <input type="file" name="" id="">
-                                                    <svg fill="none" viewBox="0 0 24 24" height="20" width="20"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path stroke-linejoin="round" fill="#707277"
-                                                            stroke-linecap="round" stroke-width="2" stroke="#707277"
-                                                            d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z">
-                                                        </path>
-                                                        <path stroke-width="2" fill="#707277" stroke="#707277"
-                                                            d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z">
-                                                        </path>
-                                                    </svg>
-                                                    </input>
-
-                                                </div>
-                                                <div class="user-info">
-                                                    <input type="text" placeholder="New clients">
-                                                    <input type="text" placeholder="Office Manager">
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </template>
-
-
-
-
-
-                        </form>
-
-                    </div>
-                </div>
-
-
-                <main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <section class="svelte-1u4rqkz">
-                        <div class="container svelte-8p0mpe">
-
-                            <div class="projects svelte-kb8lsw">
-                                <div class="paralax">
-                                    <h2 class="ttu m-0">Team Work</h2>
-
-                                    <div class="layout two svelte-4ubdxg gap grid_3">
-
-
-                                        <div class="user_">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o"
-                                                    style="background-image: url(../img/eng-1.PNG);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-
-                                                </article>
-                                            </div>
-                                            <div class="titles">
-                                                <h2>Eng - Mohamed Nassar</h2>
-                                                <h3>Office Manager</h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="user_">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o"
-                                                    style="background-image: url(../img/eng-1.PNG);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-
-                                                </article>
-                                            </div>
-                                            <div class="titles">
-                                                <h2>Eng - Mohamed Nassar</h2>
-                                                <h3>Office Manager</h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="user_">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o"
-                                                    style="background-image: url(../img/eng-1.PNG);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-
-                                                </article>
-                                            </div>
-                                            <div class="titles">
-                                                <h2>Eng - Mohamed Nassar</h2>
-                                                <h3>Office Manager</h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="user_">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o"
-                                                    style="background-image: url(../img/eng-1.PNG);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-
-                                                </article>
-                                            </div>
-                                            <div class="titles">
-                                                <h2>Eng - Mohamed Nassar</h2>
-                                                <h3>Office Manager</h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="user_">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o"
-                                                    style="background-image: url(../img/eng-1.PNG);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-
-                                                </article>
-                                            </div>
-                                            <div class="titles">
-                                                <h2>Eng - Mohamed Nassar</h2>
-                                                <h3>Office Manager</h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="user_">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o"
-                                                    style="background-image: url(../img/eng-1.PNG);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-
-                                                </article>
-                                            </div>
-                                            <div class="titles">
-                                                <h2>Eng - Mohamed Nassar</h2>
-                                                <h3>Office Manager</h3>
-                                            </div>
-                                        </div>
-
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </main>
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-            <div id="div5" class="content">
-                <div class="container text-center">
-
-                    <h1>Uploading images </h1>
-                    <p>Uploading the main images for the <code>about page</code> and <code>portfolio</code> and
-                        <code>services page</code>
+                  </div>
+                  <div class="file-uploader-footer">
+                    <p>
+                      <small>PNG, JPG, GIF files up to 20MB allowed</small>
                     </p>
+                  </div>
+                </div>
+              </section>
 
-                    <div class="row">
-                        <div>
-                            <section>
-                                <h5 class="mb-3 font-weight-bold">Image file uploader about </h5>
-                                <div class="file-uploader p-3 mb-5">
-                                    <div
-                                        class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
-                                        <span class="fa-stack fa-lg">
-                                            <span class="primary-icon fas fa-image fa-stack-2x"
-                                                aria-hidden="true"></span>
-                                            <span class="downloading-icon fas fa-chevron-down fa-stack-1x"
-                                                aria-hidden="true"></span>
-                                        </span>
-                                    </div>
-                                    <div class="file-uploader-body mb-2">
-                                        <p class="file-upload-instructions">
-                                            <input type="file">
-                                            <span class="hide-non-touch">uploading photos or videos </span>
-                                        </p>
-                                    </div>
-                                    <div class="file-uploader-footer">
-                                        <p><small>PNG, JPG, GIF files up to 20MB allowed</small></p>
-                                    </div>
-                                </div>
-                            </section>
+              <section>
+                <h5 class="mb-3 font-weight-bold">Tow video || photos</h5>
+                <div class="file-uploader p-3 mb-5">
+                  <div
+                    class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center"
+                  >
+                    <span class="fa-stack fa-lg">
+                      <span
+                        class="primary-icon fas fa-image fa-stack-2x"
+                      ></span>
+                      <span
+                        class="downloading-icon fas fa-chevron-down fa-stack-1x"
+                      ></span>
+                    </span>
+                  </div>
+                  <div class="file-uploader-body mb-2">
+                    <p class="file-upload-instructions">
+                      <input type="file" />
+                      <span class="hide-non-touch"
+                        >uploading photos or videos
+                      </span>
+                    </p>
+                  </div>
+                  <div class="file-uploader-footer">
+                    <p>
+                      <small>PNG, JPG, GIF files up to 20MB allowed</small>
+                    </p>
+                  </div>
+                </div>
+              </section>
 
-                            <section>
-                                <h5 class="mb-3 font-weight-bold">Image file uploader portfolio</h5>
-                                <div class="file-uploader p-3 mb-5">
-                                    <div
-                                        class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
-                                        <span class="fa-stack fa-lg">
-                                            <span class="primary-icon fas fa-image fa-stack-2x"
-                                                aria-hidden="true"></span>
-                                            <span class="downloading-icon fas fa-chevron-down fa-stack-1x"
-                                                aria-hidden="true"></span>
-                                        </span>
-                                    </div>
-                                    <div class="file-uploader-body mb-2">
-                                        <p class="file-upload-instructions">
-                                            <input type="file">
-                                            <span class="hide-non-touch">uploading photos or videos </span>
-                                        </p>
-                                    </div>
-                                    <div class="file-uploader-footer">
-                                        <p><small>PNG, JPG, GIF files up to 20MB allowed</small></p>
-                                    </div>
-                                </div>
-                            </section>
+              <section>
+                <h5 class="mb-3 font-weight-bold">One video || photos</h5>
+                <div class="file-uploader p-3 mb-5">
+                  <div
+                    class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center"
+                  >
+                    <span class="fa-stack fa-lg">
+                      <span
+                        class="primary-icon fas fa-image fa-stack-2x"
+                      ></span>
+                      <span
+                        class="downloading-icon fas fa-chevron-down fa-stack-1x"
+                      ></span>
+                    </span>
+                  </div>
+                  <div class="file-uploader-body mb-2">
+                    <p class="file-upload-instructions">
+                      <input type="file" />
+                      <span class="hide-non-touch"
+                        >uploading photos or videos
+                      </span>
+                    </p>
+                  </div>
+                  <div class="file-uploader-footer">
+                    <p>
+                      <small>PNG, JPG, GIF files up to 20MB allowed</small>
+                    </p>
+                  </div>
+                </div>
+              </section>
 
-                            <section>
-                                <h5 class="mb-3 font-weight-bold">Image file uploader services</h5>
-                                <div class="file-uploader p-3 mb-5">
-                                    <div
-                                        class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center">
-                                        <span class="fa-stack fa-lg">
-                                            <span class="primary-icon fas fa-image fa-stack-2x"
-                                                aria-hidden="true"></span>
-                                            <span class="downloading-icon fas fa-chevron-down fa-stack-1x"
-                                                aria-hidden="true"></span>
-                                        </span>
-                                    </div>
-                                    <div class="file-uploader-body mb-2">
-                                        <p class="file-upload-instructions">
-                                            <input type="file">
-                                            <span class="hide-non-touch">uploading photos or videos </span>
-                                        </p>
-                                    </div>
-                                    <div class="file-uploader-footer">
-                                        <p><small>PNG, JPG, GIF files up to 20MB allowed</small></p>
-                                    </div>
-                                </div>
-                            </section>
+              <button>Upload video || photos</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="div3" class="content">
+        <form autocomplete="on" class="container step-form" id="form">
+          <h1>Upload the design with all its details</h1>
+          <p>Make sure all files are filled out</p>
+          <div class="timeline" id="timeline">
+            <div class="row">
+              <div class="col on step_1">
+                <p class="badge circle">1</p>
+              </div>
+              <div class="col step_2">
+                <p class="badge circle">2</p>
+              </div>
+              <div class="col step_4 complete">
+                <p class="badge circle">4</p>
+              </div>
+            </div>
+          </div>
+          <div class="step" id="step_1">
+            <h2>The first step</h2>
+            <br />
+            <p>
+              is to upload the basic image, the name of the project, and the
+              first popular description
+            </p>
+            <br />
+            <div class="row">
+              <div class="col">
+                <label>cover img <em> </em></label
+                ><input type="file" class="text" placeholder="file" />
+              </div>
+              <div class="col">
+                <label>category <em> </em></label>
+                <select class="text" placeholder="category">
+                  <option value="architectural-design">
+                    Architectural Design
+                  </option>
+                  <option value="interiors-design">Interiors Design</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label>main img <em> </em></label
+                ><input type="file" class="text" placeholder="file" />
+              </div>
+              <div class="col">
+                <label>project Name <em> </em></label
+                ><input class="text" placeholder="project Name " />
+              </div>
+            </div>
+            <button class="continue" data-target="step_2">Continue</button>
+          </div>
+          <div class="step hidden" id="step_2">
+            <h2>The second step</h2>
+            <p>Add description or pictures in order</p>
+
+            <div id="formContainer" class="row">
+              <!-- Existing content goes here -->
+            </div>
+
+            <style>
+              .row {
+                display: flex;
+                flex-wrap: wrap;
+              }
+              .col {
+                flex: 1;
+                margin: 10px;
+                position: relative; /* For positioning the delete button */
+              }
+              .col label,
+              .col input {
+                display: block;
+                width: 100%;
+              }
+              .delete-btn {
+                position: absolute;
+                top: 10px;
+                right: -10px;
+                background-color: #f44336;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+              }
+            </style>
+
+            <br />
+            <button onclick="addBigImg()">Add Img</button>
+
+            <button onclick="addProjectDescription()">Add Description</button>
+            <button class="back" data-target="step_1">Back</button>
+            <button class="continue" data-target="step_4">Continue</button>
+          </div>
+          <div class="step hidden complete" id="step_4">
+            <h2>Completed</h2>
+            <p>Click Upload to send to the site</p>
+            <img
+              src="https://cdn.dribbble.com/users/195239/screenshots/2794760/high-five.gif"
+              style="
+                width: 100%;
+                max-width: 40%;
+                margin-bottom: 2rem;
+                border: 1px solid #ddd;
+              "
+            />
+            <button class="reset">Upload</button>
+            <button class="outline view-all">View all form steps</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="div4" class="content">
+        <div class="container text-center">
+          <h1>Upload and delete clients</h1>
+
+          <p>
+            Add a photo, the client’s name, and his profession, and you can
+            <code>add</code> and <code>delete</code> it at any time
+          </p>
+
+          <div class="flex ptn">
+            <div class="walletBalanceCard" type="button" onclick="addElement()">
+              <button>Add clients</button>
+            </div>
+
+            <div
+              class="walletBalanceCard"
+              type="button"
+              onclick="removeElement()"
+            >
+              <button>Delet clients</button>
+            </div>
+
+            <div class="walletBalanceCard" type="button">
+              <button>Upload clients</button>
+            </div>
+
+            <form
+              class="form-container"
+              enctype="multipart/form-data"
+              id="container"
+            >
+              <template id="inputFileTemplate">
+                <div class="card">
+                  <div class="comments">
+                    <div class="comment-container">
+                      <div class="row">
+                        <div class="col">
+                          <label> clients img <em> </em></label
+                          ><input
+                            type="file"
+                            class="text"
+                            placeholder="clients img"
+                          />
                         </div>
+                        <div class="col">
+                          <label> clients Name <em> </em></label
+                          ><input class="text" placeholder="clients name " />
+                        </div>
+                        <div class="col">
+                          <label>clients Office <em> </em></label
+                          ><input class="text" placeholder="clients Office " />
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </template>
+            </form>
+          </div>
+        </div>
 
+        <main>
+          <section class="svelte-1u4rqkz">
+            <div class="container svelte-8p0mpe">
+              <div class="projects svelte-kb8lsw">
+                <div class="paralax">
+                  <h2 class="ttu m-0">Team Work</h2>
 
+                  <div class="layout two svelte-4ubdxg gap grid_3">
+                    <div class="user_">
+                      <div>
+                        <article
+                          data-index="0"
+                          class="m svelte-14dhi5o"
+                          style="background-image: url(../img/eng-1.PNG)"
+                        >
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="titles">
+                        <h2>Eng - Mohamed Nassar</h2>
+                        <h3>Office Manager</h3>
+                      </div>
+                    </div>
 
+                    <div class="user_">
+                      <div>
+                        <article
+                          data-index="0"
+                          class="m svelte-14dhi5o"
+                          style="background-image: url(../img/eng-1.PNG)"
+                        >
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="titles">
+                        <h2>Eng - Mohamed Nassar</h2>
+                        <h3>Office Manager</h3>
+                      </div>
+                    </div>
 
+                    <div class="user_">
+                      <div>
+                        <article
+                          data-index="0"
+                          class="m svelte-14dhi5o"
+                          style="background-image: url(../img/eng-1.PNG)"
+                        >
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="titles">
+                        <h2>Eng - Mohamed Nassar</h2>
+                        <h3>Office Manager</h3>
+                      </div>
+                    </div>
 
+                    <div class="user_">
+                      <div>
+                        <article
+                          data-index="0"
+                          class="m svelte-14dhi5o"
+                          style="background-image: url(../img/eng-1.PNG)"
+                        >
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="titles">
+                        <h2>Eng - Mohamed Nassar</h2>
+                        <h3>Office Manager</h3>
+                      </div>
+                    </div>
 
+                    <div class="user_">
+                      <div>
+                        <article
+                          data-index="0"
+                          class="m svelte-14dhi5o"
+                          style="background-image: url(../img/eng-1.PNG)"
+                        >
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="titles">
+                        <h2>Eng - Mohamed Nassar</h2>
+                        <h3>Office Manager</h3>
+                      </div>
+                    </div>
 
-
-
-
-
-
+                    <div class="user_">
+                      <div>
+                        <article
+                          data-index="0"
+                          class="m svelte-14dhi5o"
+                          style="background-image: url(../img/eng-1.PNG)"
+                        >
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="titles">
+                        <h2>Eng - Mohamed Nassar</h2>
+                        <h3>Office Manager</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
+        </main>
+      </div>
 
+      <div id="div5" class="content">
+        <div class="container text-center">
+          <h1>Uploading images</h1>
+          <p>
+            Uploading the main images for the <code>about page</code> and
+            <code>portfolio</code> and
+            <code>services page</code>
+          </p>
 
-
-
-
-
-
-            <div id="div6" class="content">
-
-                <div class="container text-center">
-
-                    <h1>delete Project</h1>
-
-                    <p>Be careful when deleting the project as it will <code>delete</code> the entire project</p>
-
+          <div class="row">
+            <form action="#">
+              <section>
+                <h5 class="mb-3 font-weight-bold">Image file uploader about</h5>
+                <div class="file-uploader p-3 mb-5">
+                  <div
+                    class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center"
+                  >
+                    <span class="fa-stack fa-lg">
+                      <span
+                        class="primary-icon fas fa-image fa-stack-2x"
+                        aria-hidden="true"
+                      ></span>
+                      <span
+                        class="downloading-icon fas fa-chevron-down fa-stack-1x"
+                        aria-hidden="true"
+                      ></span>
+                    </span>
+                  </div>
+                  <div class="file-uploader-body mb-2">
+                    <p class="file-upload-instructions">
+                      <input type="file" />
+                      <span class="hide-non-touch"
+                        >uploading photos or videos
+                      </span>
+                    </p>
+                  </div>
+                  <div class="file-uploader-footer">
+                    <p><small>PNG, JPG, GIF files up to 20MB allowed</small></p>
+                  </div>
                 </div>
+              </section>
 
-
-                <div class="container svelte-8p0mpe">
-                    <section class="svelte-1u4rqkz  pad">
-                        <div class="container svelte-8p0mpe">
-
-                            <div class="projects svelte-kb8lsw">
-                                <div class="paralax">
-
-                                    <div class="layout two svelte-4ubdxg gap ">
-
-
-
-                                        <div class="user_ aos-init aos-animate" data-aos="fade-up">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o">
-                                                    <img src="./img/Mask group (3).png"
-                                                        alt=" Mons Concinnus: panoramic-view house in India"
-                                                        class="svelte-14dhi5o"
-                                                        style="transform: translate3d(0px, -38.0667px, 0px); filter: invert(0);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-                                                </article>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="user_ aos-init aos-animate" data-aos="fade-up">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o">
-                                                    <img src="./img/Mask group (3).png"
-                                                        alt=" Mons Concinnus: panoramic-view house in India"
-                                                        class="svelte-14dhi5o"
-                                                        style="transform: translate3d(0px, -38.0667px, 0px); filter: invert(0);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-                                                </article>
-                                            </div>
-
-                                        </div>
-
-
-
-                                        <div class="user_ aos-init" data-aos="fade-up">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o">
-                                                    <img src="./img/Mask group (3).png"
-                                                        alt=" Mons Concinnus: panoramic-view house in India"
-                                                        class="svelte-14dhi5o"
-                                                        style="transform: translate3d(0px, -38.0667px, 0px); filter: invert(0);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-                                                </article>
-                                            </div>
-
-                                        </div>
-
-
-
-                                        <div class="user_ aos-init" data-aos="fade-up">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o">
-                                                    <img src="./img/Mask group (3).png"
-                                                        alt=" Mons Concinnus: panoramic-view house in India"
-                                                        class="svelte-14dhi5o"
-                                                        style="transform: translate3d(0px, -38.0667px, 0px); filter: invert(0);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-                                                </article>
-                                            </div>
-
-                                        </div>
-
-
-                                        <div class="user_ aos-init" data-aos="fade-up">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o">
-                                                    <img src="./img/Mask group (3).png"
-                                                        alt=" Mons Concinnus: panoramic-view house in India"
-                                                        class="svelte-14dhi5o"
-                                                        style="transform: translate3d(0px, -38.0667px, 0px); filter: invert(0);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-                                                </article>
-                                            </div>
-
-                                        </div>
-
-
-                                        <div class="user_ aos-init" data-aos="fade-up">
-                                            <div>
-                                                <article data-index="0" class="m svelte-14dhi5o">
-                                                    <img src="./img/Mask group (3).png"
-                                                        alt=" Mons Concinnus: panoramic-view house in India"
-                                                        class="svelte-14dhi5o"
-                                                        style="transform: translate3d(0px, -38.0667px, 0px); filter: invert(0);">
-                                                    <div class="dell"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" fill="white" class="bi bi-x-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                                        </svg></div>
-                                                </article>
-                                            </div>
-
-                                        </div>
-
-
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+              <section>
+                <h5 class="mb-3 font-weight-bold">
+                  Image file uploader portfolio
+                </h5>
+                <div class="file-uploader p-3 mb-5">
+                  <div
+                    class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center"
+                  >
+                    <span class="fa-stack fa-lg">
+                      <span
+                        class="primary-icon fas fa-image fa-stack-2x"
+                        aria-hidden="true"
+                      ></span>
+                      <span
+                        class="downloading-icon fas fa-chevron-down fa-stack-1x"
+                        aria-hidden="true"
+                      ></span>
+                    </span>
+                  </div>
+                  <div class="file-uploader-body mb-2">
+                    <p class="file-upload-instructions">
+                      <input type="file" />
+                      <span class="hide-non-touch"
+                        >uploading photos or videos
+                      </span>
+                    </p>
+                  </div>
+                  <div class="file-uploader-footer">
+                    <p><small>PNG, JPG, GIF files up to 20MB allowed</small></p>
+                  </div>
                 </div>
+              </section>
+
+              <section>
+                <h5 class="mb-3 font-weight-bold">
+                  Image file uploader services
+                </h5>
+                <div class="file-uploader p-3 mb-5">
+                  <div
+                    class="icon-container mb-2 mx-auto d-flex justify-content-center align-items-center"
+                  >
+                    <span class="fa-stack fa-lg">
+                      <span
+                        class="primary-icon fas fa-image fa-stack-2x"
+                        aria-hidden="true"
+                      ></span>
+                      <span
+                        class="downloading-icon fas fa-chevron-down fa-stack-1x"
+                        aria-hidden="true"
+                      ></span>
+                    </span>
+                  </div>
+                  <div class="file-uploader-body mb-2">
+                    <p class="file-upload-instructions">
+                      <input type="file" />
+                      <span class="hide-non-touch"
+                        >uploading photos or videos
+                      </span>
+                    </p>
+                  </div>
+                  <div class="file-uploader-footer">
+                    <p><small>PNG, JPG, GIF files up to 20MB allowed</small></p>
+                  </div>
+                </div>
+              </section>
+              <button>Upload video || photos</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="div6" class="content">
+        <div class="container text-center">
+          <h1>delete Project</h1>
+
+          <p>
+            Be careful when deleting the project as it will
+            <code>delete</code> the entire project
+          </p>
+        </div>
+
+        <div class="container svelte-8p0mpe">
+          <section class="svelte-1u4rqkz pad">
+            <div class="container svelte-8p0mpe">
+              <div class="projects svelte-kb8lsw">
+                <div class="paralax">
+                  <div class="layout two svelte-4ubdxg gap">
+                    <div class="user_ aos-init aos-animate" data-aos="fade-up">
+                      <div>
+                        <article data-index="0" class="m svelte-14dhi5o">
+                          <img
+                            src="./img/Mask group (3).png"
+                            alt=" Mons Concinnus: panoramic-view house in India"
+                            class="svelte-14dhi5o"
+                            style="
+                              transform: translate3d(0px, -38.0667px, 0px);
+                              filter: invert(0);
+                            "
+                          />
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+
+                    <div class="user_ aos-init aos-animate" data-aos="fade-up">
+                      <div>
+                        <article data-index="0" class="m svelte-14dhi5o">
+                          <img
+                            src="./img/Mask group (3).png"
+                            alt=" Mons Concinnus: panoramic-view house in India"
+                            class="svelte-14dhi5o"
+                            style="
+                              transform: translate3d(0px, -38.0667px, 0px);
+                              filter: invert(0);
+                            "
+                          />
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+
+                    <div class="user_ aos-init" data-aos="fade-up">
+                      <div>
+                        <article data-index="0" class="m svelte-14dhi5o">
+                          <img
+                            src="./img/Mask group (3).png"
+                            alt=" Mons Concinnus: panoramic-view house in India"
+                            class="svelte-14dhi5o"
+                            style="
+                              transform: translate3d(0px, -38.0667px, 0px);
+                              filter: invert(0);
+                            "
+                          />
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+
+                    <div class="user_ aos-init" data-aos="fade-up">
+                      <div>
+                        <article data-index="0" class="m svelte-14dhi5o">
+                          <img
+                            src="./img/Mask group (3).png"
+                            alt=" Mons Concinnus: panoramic-view house in India"
+                            class="svelte-14dhi5o"
+                            style="
+                              transform: translate3d(0px, -38.0667px, 0px);
+                              filter: invert(0);
+                            "
+                          />
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+
+                    <div class="user_ aos-init" data-aos="fade-up">
+                      <div>
+                        <article data-index="0" class="m svelte-14dhi5o">
+                          <img
+                            src="./img/Mask group (3).png"
+                            alt=" Mons Concinnus: panoramic-view house in India"
+                            class="svelte-14dhi5o"
+                            style="
+                              transform: translate3d(0px, -38.0667px, 0px);
+                              filter: invert(0);
+                            "
+                          />
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+
+                    <div class="user_ aos-init" data-aos="fade-up">
+                      <div>
+                        <article data-index="0" class="m svelte-14dhi5o">
+                          <img
+                            src="./img/Mask group (3).png"
+                            alt=" Mons Concinnus: panoramic-view house in India"
+                            class="svelte-14dhi5o"
+                            style="
+                              transform: translate3d(0px, -38.0667px, 0px);
+                              filter: invert(0);
+                            "
+                          />
+                          <div class="dell">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="white"
+                              class="bi bi-x-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                              />
+                            </svg>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
+        </div>
+      </div>
 
+      <div id="div7" class="content">
+        <div class="body-content flex flex-column">
+          <main class="flex flex-column gap-3 grow">
+            <section class="flex gap-2 items-center justify-between">
+              <div id="bulkActions" class="bulk-actions hidden items-center">
+                <i class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                    ></path>
+                  </svg>
+                </i>
+              </div>
 
+              <h1 id="title" class="leading-none">Contacts</h1>
 
-
-            <div id="div7" class="content">
-                <div class="body-content flex flex-column">
-
-
-                    <main class="flex flex-column gap-3 grow">
-                        <section class="flex gap-2 items-center justify-between">
-                            <div id="bulkActions" class="bulk-actions hidden items-center">
-
-
-
-                                <i class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        viewBox="0 0 256 256">
-                                        <path
-                                            d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
-                                        </path>
-                                    </svg>
-                                </i>
-                            </div>
-
-                            <h1 id="title" class="leading-none">Contacts</h1>
-
-                            <div class="flex gap-1 items-center">
-
-
-                                <div class="group">
-                                    <svg class="icon_i " aria-hidden="true" viewBox="0 0 24 24">
-                                        <g>
-                                            <path
-                                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                    <input type="search" class="input" id="searchInput" onkeyup="searchTable()"
-                                        placeholder="Search for names..">
-                                </div>
-
-
-
-
-
-
-
-                            </div>
-                        </section>
-
-                        <section class="flex flex-column gap-2">
-                            <table id="myTable">
-                                <tr class="no-hover">
-                                    <th>Delet</th>
-                                    <th><span>ID</span></th>
-                                    <th><span> Name</span></th>
-                                    <th><span>Mobile</span></th>
-                                    <th><span>Email</span></th>
-                                    <th><span>the time</span></th>
-                                    <th><span>the date</span></th>
-                                </tr>
-
-
-
-
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                    </td>
-                                    <td>1</td>
-                                    <td>Ammar Ahmed</td>
-                                    <td>01070479599</td>
-                                    <td>eomond0@mozilla.com</td>
-                                    <td> 12:10 pm</td>
-                                    <td>31-7-2024</td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                    </td>
-                                    <td>2</td>
-                                    <td>Ammar Ahmed</td>
-                                    <td>01070479599</td>
-                                    <td>eomond0@mozilla.com</td>
-                                    <td> 12:10 pm</td>
-                                    <td>31-7-2024</td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                    </td>
-                                    <td>3</td>
-                                    <td>Ammar Ahmed</td>
-                                    <td>01070479599</td>
-                                    <td>eomond0@mozilla.com</td>
-                                    <td> 12:10 pm</td>
-                                    <td>31-7-2024</td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                    </td>
-                                    <td>4</td>
-                                    <td>Ammar Ahmed</td>
-                                    <td>01070479599</td>
-                                    <td>eomond0@mozilla.com</td>
-                                    <td> 12:10 pm</td>
-                                    <td>31-7-2024</td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                    </td>
-                                    <td>5</td>
-                                    <td>Ammar Ahmed</td>
-                                    <td>01070479599</td>
-                                    <td>eomond0@mozilla.com</td>
-                                    <td> 12:10 pm</td>
-                                    <td>31-7-2024</td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label class="checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                    </td>
-                                    <td>6</td>
-                                    <td>Ammar Ahmed</td>
-                                    <td>01070479599</td>
-                                    <td>eomond0@mozilla.com</td>
-                                    <td> 12:10 pm</td>
-                                    <td>31-7-2024</td>
-                                </tr>
-
-
-
-
-                            </table>
-
-                        </section>
-                    </main>
+              <div class="flex gap-1 items-center">
+                <div class="group">
+                  <svg class="icon_i" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                      <path
+                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <input
+                    type="search"
+                    class="input"
+                    id="searchInput"
+                    onkeyup="searchTable()"
+                    placeholder="Search for names.."
+                  />
                 </div>
+              </div>
+            </section>
 
+            <section class="flex flex-column gap-2">
+              <table id="myTable">
+                <tr class="no-hover">
+                  <th>Delet</th>
+                  <th><span>ID</span></th>
+                  <th><span> Name</span></th>
+                  <th><span>Mobile</span></th>
+                  <th><span>Email</span></th>
+                  <th><span>the time</span></th>
+                  <th><span>the date</span></th>
+                </tr>
 
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </td>
+                  <td>1</td>
+                  <td>Ammar Ahmed</td>
+                  <td>01070479599</td>
+                  <td>eomond0@mozilla.com</td>
+                  <td>12:10 pm</td>
+                  <td>31-7-2024</td>
+                </tr>
 
-            </div>
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </td>
+                  <td>2</td>
+                  <td>Ammar Ahmed</td>
+                  <td>01070479599</td>
+                  <td>eomond0@mozilla.com</td>
+                  <td>12:10 pm</td>
+                  <td>31-7-2024</td>
+                </tr>
 
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </td>
+                  <td>3</td>
+                  <td>Ammar Ahmed</td>
+                  <td>01070479599</td>
+                  <td>eomond0@mozilla.com</td>
+                  <td>12:10 pm</td>
+                  <td>31-7-2024</td>
+                </tr>
 
-            <!-- Footer -->
-            <!-- <footer class="footer pt-3 pb-4">
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </td>
+                  <td>4</td>
+                  <td>Ammar Ahmed</td>
+                  <td>01070479599</td>
+                  <td>eomond0@mozilla.com</td>
+                  <td>12:10 pm</td>
+                  <td>31-7-2024</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </td>
+                  <td>5</td>
+                  <td>Ammar Ahmed</td>
+                  <td>01070479599</td>
+                  <td>eomond0@mozilla.com</td>
+                  <td>12:10 pm</td>
+                  <td>31-7-2024</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </td>
+                  <td>6</td>
+                  <td>Ammar Ahmed</td>
+                  <td>01070479599</td>
+                  <td>eomond0@mozilla.com</td>
+                  <td>12:10 pm</td>
+                  <td>31-7-2024</td>
+                </tr>
+              </table>
+            </section>
+          </main>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <!-- <footer class="footer pt-3 pb-4">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-lg-6 mb-lg-0 mb-4">
@@ -1399,71 +1613,69 @@
                 </div>
             </div>
         </footer> -->
-        </div>
-        <div class="loopple-badge">Ammar Ahmed<a href="#"><img src="https://www.loopple.com/img/loopple-logo.png"
-                    class="loopple-ml-1" style="width:55px"></a></div>
-        <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/core/popper.min.js"></script>
-        <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/core/bootstrap.min.js"></script>
-        <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/chartjs.min.js"></script>
-        <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/Chart.extension.js"></script>
-        <script
-            src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/soft-ui-dashboard.min.js?v=1.0.2"></script>
+    </div>
+    <div class="loopple-badge">
+      Ammar Ahmed<a href="#"
+        ><img
+          src="https://www.loopple.com/img/loopple-logo.png"
+          class="loopple-ml-1"
+          style="width: 55px"
+      /></a>
+    </div>
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/core/popper.min.js"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/core/bootstrap.min.js"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/chartjs.min.js"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/Chart.extension.js"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/soft-ui-dashboard.min.js?v=1.0.2"></script>
 
+    <script src="./script/app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.querySelectorAll(".toggle-button");
 
-<script src="./script/app.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const buttons = document.querySelectorAll(".toggle-button");
-
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          buttons.forEach((btn) => btn.classList.remove("active"));
-          button.classList.add("active");
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            button.classList.add("active");
+          });
         });
       });
-    });
-  </script>
+    </script>
 
-
-
-<script>
-    function addProjectDescription() {
-        const container = document.getElementById('formContainer');
-        const newCol = document.createElement('div');
-        newCol.className = 'col';
+    <script>
+      function addProjectDescription() {
+        const container = document.getElementById("formContainer");
+        const newCol = document.createElement("div");
+        newCol.className = "col";
         newCol.innerHTML = `
             <label> Description</label>
             <input class="text" placeholder="Project Description" />
             <button class="delete-btn" onclick="removeElement(event)">Delete</button>
         `;
-        
-        container.appendChild(newCol);
-    }
 
-    function addBigImg() {
-        const container = document.getElementById('formContainer');
-        const newCol = document.createElement('div');
-        newCol.className = 'col';
+        container.appendChild(newCol);
+      }
+
+      function addBigImg() {
+        const container = document.getElementById("formContainer");
+        const newCol = document.createElement("div");
+        newCol.className = "col";
         newCol.innerHTML = `
             <label> Img</label>
             <input class="text" type="file" placeholder="File" />
             <button class="delete-btn" onclick="removeElement(event)">Delete</button>
         `;
-        
+
         container.appendChild(newCol);
-    }
+      }
 
-    function removeElement(event) {
+      function removeElement(event) {
         const button = event.target;
-        const col = button.closest('.col'); // Find the closest .col element
+        const col = button.closest(".col"); // Find the closest .col element
         if (col) {
-            col.remove(); // Remove the entire column
+          col.remove(); // Remove the entire column
         }
-    }
-</script>
-
-    </div>
-
-
-
+      }
+    </script>
+  </div>
 </body>
