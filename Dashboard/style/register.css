@@ -200,3 +200,7 @@ body {
   }
 }
 /*# sourceMappingURL=styles.css.map */
+
+input[type="file"] {
+  padding: 10px !important;
+}
