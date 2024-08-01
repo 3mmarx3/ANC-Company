@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Switcher</title>
+    <link rel="stylesheet" href="./Style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body id="body">
+    <main>
+      <div class="switch-lang">
+        <button class="selecting-lang" data-lang="ar">
+          <div class="img_Tr">
+            <img
+              class="lang-flag"
+              src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Saudi_Arabia.png"
+            />
+          </div>
+          <p class="lang-text">اللغة العربية</p>
+        </button>
+        <button class="selecting-lang" data-lang="en">
+          <div class="img_Tr">
+            <img
+              class="lang-flag"
+              src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"
+            />
+          </div>
+          <p class="lang-text">English</p>
+        </button>
+      </div>
+
+      <div id="google_element"></div>
+
+      <p
+        class="title"
+        id="title"
+        data-meaning-en="UI/UX Designer + Graphic Designer"
+        data-meaning-ar="مصمم UI/UX + مصمم جرافيك"
+      >
+        UI/UX Designer + Graphic Designer
+      </p>
+      <h2>ammar</h2>
+    </main>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        let currentLanguage = localStorage.getItem("selectedLanguage") || "en";
+
+        function changeLanguage(language) {
+          if (currentLanguage !== language) {
+            currentLanguage = language;
+            localStorage.setItem("selectedLanguage", language);
+            updateCurrentLanguage();
+            setTimeout(updateGoogleTranslateLanguage, 1000); // Add a slight delay
+          }
+        }
+
+        function updateCurrentLanguage() {
+          const $currentLangElement = $(".current-lang .lang-text");
+          const $currentLangFlag = $(".current-lang .lang-flag");
+          if (currentLanguage === "en") {
+            $currentLangElement.text("English");
+            $currentLangFlag.attr(
+              "src",
+              "https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"
+            );
+            $("body").css({
+              direction: "ltr",
+              "font-family": "sans-serif",
+            });
+          } else if (currentLanguage === "ar") {
+            $currentLangElement.text("اللغة العربية");
+            $currentLangFlag.attr(
+              "src",
+              "https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Saudi_Arabia.png"
+            );
+            $("body").css({
+              direction: "rtl",
+              "font-family": "'Cairo', sans-serif",
+            });
+          }
+
+          // Update text based on language
+          const $element = $("#title");
+          if (currentLanguage === "en") {
+            $element.text($element.data("meaning-en"));
+          } else if (currentLanguage === "ar") {
+            $element.text($element.data("meaning-ar"));
+          }
+        }
+
+        function updateGoogleTranslateLanguage() {
+          const googleTranslateSelect = $(
+            "#google_element select.goog-te-combo"
+          );
+          if (googleTranslateSelect.length === 0) {
+            return; // If the element is not found, do nothing
+          }
+          if (currentLanguage === "en") {
+            googleTranslateSelect.val("en");
+          } else if (currentLanguage === "ar") {
+            googleTranslateSelect.val("ar");
+          }
+          localStorage.setItem(
+            "googleTranslateLang",
+            googleTranslateSelect.val()
+          );
+          googleTranslateSelect[0].dispatchEvent(new Event("change"));
+        }
+
+        $(".selecting-lang").on("click", function () {
+          const lang = $(this).data("lang");
+          changeLanguage(lang);
+        });
+
+        window.googleTranslateElementInit = function () {
+          new google.translate.TranslateElement(
+            { defaultLanguage: "en", includedLanguages: "en,ar" },
+            "google_element"
+          );
+          updateCurrentLanguage();
+          setTimeout(updateGoogleTranslateLanguage, 1000); // Add a slight delay to ensure Google Translate is initialized
+        };
+      });
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: large;
+        list-style-type: none;
+        text-transform: capitalize;
+      }
+
+      main {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .language-list li {
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+
+      .language-list li:hover {
+        text-decoration: underline;
+      }
+
+      .switch-lang {
+        display: flex;
+        gap: 10px;
+        margin: 10px;
+      }
+
+      .selecting-lang {
+        background: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 10px;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .selecting-lang:hover {
+        background: #ddd;
+      }
+
+      .img_Tr {
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .lang-flag {
+        width: 20px;
+        display: inline-block;
+      }
+
+      .menu-arrow {
+        display: inline-block;
+        width: 10px;
+        margin-left: 10px;
+        vertical-align: top;
+        margin-top: 6px;
+      }
+
+      .div .title {
+        font-size: large;
+        color: white;
+        margin: 20px 5px;
+      }
+
+      /* إخفاء العناصر ذات الصلة بمكتبة Google Translate */
+      .goog-te-banner-frame,
+      .goog-te-menu-value,
+      .goog-te-menu2-item,
+      .goog-te-combo,
+      .skiptranslate {
+        display: none !important;
+      }
+      .-VIpgJd-yAWNEb-VIpgJd-fmcms-sn540 {
+        background: none !important;
+      }
+    </style>
+  </body>
+</html>
