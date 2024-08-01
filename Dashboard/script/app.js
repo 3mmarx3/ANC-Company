@@ -108,6 +108,8 @@ form.addEventListener("click", function (event) {
   }
 });
 
+// script 2
+
 function addElement() {
   var template = document.getElementById("inputFileTemplate");
   var clone = template.content.cloneNode(true);

@@ -275,7 +275,7 @@ h2 {
 .row {
   table-layout: fixed;
   width: 100%;
-  margin: 0 0 3rem;
+  /* margin: 0 0 3rem; */
 }
 
 .row .row {
