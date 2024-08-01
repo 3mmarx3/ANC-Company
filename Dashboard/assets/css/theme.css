@@ -19670,12 +19670,7 @@ span.flatpickr-weekday {
   text-align: center;
   font-weight: 400;
 }
-.flatpickr-time .flatpickr-am-pm:focus,
-.flatpickr-time .flatpickr-am-pm:hover,
-.flatpickr-time input:focus,
-.flatpickr-time input:hover {
-  background: #eee;
-}
+
 .flatpickr-input[readonly] {
   cursor: pointer;
 }

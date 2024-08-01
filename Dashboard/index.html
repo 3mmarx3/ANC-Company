@@ -621,7 +621,6 @@
                                 </select>
                             </div>
                         </div>
-                        <br>
                         <div class="row">
                             <div class="col">
                                 <label>main img <em> </em></label><input type="file" class="text" placeholder="file" />
@@ -634,7 +633,7 @@
                     </div>
                     <div class="step hidden" id="step_2">
                         <h2>The second step</h2>
-                        <p>is to upload 3 pictures of the project in order and description, then the big picture </p>
+                        <p>Add description or pictures in order </p>
                         
 
                         
@@ -1433,7 +1432,7 @@
         const newCol = document.createElement('div');
         newCol.className = 'col';
         newCol.innerHTML = `
-            <label>Project Description</label>
+            <label> Description</label>
             <input class="text" placeholder="Project Description" />
             <button class="delete-btn" onclick="removeElement(event)">Delete</button>
         `;
@@ -1446,7 +1445,7 @@
         const newCol = document.createElement('div');
         newCol.className = 'col';
         newCol.innerHTML = `
-            <label>Big Img</label>
+            <label> Img</label>
             <input class="text" type="file" placeholder="File" />
             <button class="delete-btn" onclick="removeElement(event)">Delete</button>
         `;
