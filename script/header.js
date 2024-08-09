@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let header = `
+  let header = `
     <div></div> <button class="overlay svelte-19r4np0" id="opacity"></button>
    <div class="menu svelte-19r4np0">
       <div class="menu__wrapper svelte-19r4np0">
@@ -137,71 +137,63 @@ document.addEventListener("DOMContentLoaded", function () {
     <button class="menu-button svelte-15esu0b"></button>
     `;
 
-    let header_nav = document.getElementById('header_nav');
-    header_nav.innerHTML = header;
+  let header_nav = document.getElementById("header_nav");
+  header_nav.innerHTML = header;
 
-    // القائمة المخفية
-    const menuButton = document.querySelector('.menu-button');
-    const menu = document.querySelector('.menu');
-    var body = document.getElementById('body')
+  // القائمة المخفية
+  const menuButton = document.querySelector(".menu-button");
+  const menu = document.querySelector(".menu");
+  var body = document.getElementById("body");
 
-    var opacity = document.getElementById("opacity");
+  var opacity = document.getElementById("opacity");
 
+  menu.style.display = "none";
 
-    menu.style.display = 'none';
+  menuButton.addEventListener("click", function () {
+    if (menu.style.display === "none") {
+      menu.style.display = "block";
+      body.style.overflow = "hidden";
+      opacity.style.opacity = 1;
+    } else {
+      menu.style.display = "none";
+      body.style.overflow = "auto";
+      opacity.style.opacity = 0;
+    }
+  });
 
-    menuButton.addEventListener('click', function () {
-      if (menu.style.display === 'none') {
-        menu.style.display = 'block';
-        body.style.overflow = 'hidden';
-        opacity.style.opacity=1;
+  var hamburger = document.querySelector(".hamburger");
+  var responsiveMenu = document.getElementById("responsive_menu");
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("is-active");
+    if (hamburger.classList.contains("is-active")) {
+      responsiveMenu.style.right = "0";
+      body.style.overflow = "hidden";
+    } else {
+      responsiveMenu.style.right = "-100%";
+      body.style.overflow = "auto";
+    }
+  });
 
+  gsap.registerPlugin(ScrollTrigger);
 
-      } else {
-        menu.style.display = 'none';
-        body.style.overflow = 'auto';
-        opacity.style.opacity=0;
+  gsap.from(".hero_text_title li", {
+    y: "100%",
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".hero_text_title",
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: true,
+    },
+  });
 
-
-      }
-    });
-
-    var hamburger = document.querySelector(".hamburger");
-    var responsiveMenu = document.getElementById("responsive_menu");
-    hamburger.addEventListener("click", function () {
-        hamburger.classList.toggle("is-active");
-        if (hamburger.classList.contains("is-active")) {
-            responsiveMenu.style.right = "0";
-                body.style.overflow='hidden';
-
-        } else {
-            responsiveMenu.style.right = "-100%";
-            body.style.overflow='auto';
-
-
-        }
-    });
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.from(".hero_text_title li", {
-        y: "100%",
-        stagger: 0.3,
-        scrollTrigger: {
-            trigger: ".hero_text_title",
-            start: "top 80%",
-            end: "bottom 20%",
-            scrub: true
-        }
-    });
-
-    gsap.from(".hero_text_tagline span", {
-        y: "100%",
-        scrollTrigger: {
-            trigger: ".hero_text_tagline",
-            start: "top 80%",
-            end: "bottom 20%",
-            scrub: true
-        }
-    });
+  gsap.from(".hero_text_tagline span", {
+    y: "100%",
+    scrollTrigger: {
+      trigger: ".hero_text_tagline",
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: true,
+    },
+  });
 });

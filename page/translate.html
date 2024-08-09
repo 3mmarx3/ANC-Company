@@ -11,19 +11,66 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet"
     />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/normalize.css" />
+
+    <script src="../script/jquery.js"></script>
   </head>
   <body id="body">
-    <div class="switch-lang">
-      <button class="selecting-lang" data-lang="ar">
-        <p class="lang-text">اللغة العربية</p>
-      </button>
-      <button class="selecting-lang" data-lang="en">
-        <p class="lang-text">English</p>
-      </button>
-    </div>
+    <header class="svelte-15esu0b">
+      <div class="container svelte-8p0mpe">
+        <div class="wrapper svelte-15esu0b">
+          <div class="logo">
+            <a href="../index.html"
+              ><img src="../img/logo.png" alt="ANC-Company" width="40%"
+            /></a>
+          </div>
+          <ul class="links svelte-15esu0b">
+            <li>
+              <a href="../page/About.html" class="svelte-15esu0b">about</a>
+            </li>
+            <li>
+              <a href="../page/Portfolio.html" class="svelte-15esu0b"
+                >portfolio</a
+              >
+            </li>
+            <li>
+              <a href="../page/Contact.html" class="svelte-15esu0b">contacts</a>
+            </li>
+            <li>
+              <a href="../page/Services.html" class="svelte-15esu0b"
+                >services</a
+              >
+            </li>
+          </ul>
+          <ul class="locales svelte-15esu0b switch-lang">
+            <li class="selecting-lang" data-lang="ar">
+              <p
+                class="lang-text color_w title"
+                id="title"
+                data-meaning-en="AR"
+                data-meaning-ar="اللغة العربية"
+              >
+                AR
+              </p>
+            </li>
+            <li class="selecting-lang" data-lang="en">
+              <p
+                class="lang-text color_w title"
+                id="title"
+                data-meaning-en="En"
+                data-meaning-ar="English"
+              >
+                EN
+              </p>
+            </li>
 
-    <div id="google_element"></div>
+            <div id="google_element"></div>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <p
       class="title"
@@ -34,11 +81,15 @@
       UI/UX Designer + Graphic Designer
     </p>
     <h2>ammar</h2>
+    <h2>ammar</h2>
+    <h2>ammar</h2>
+    <h2>ammar</h2>
+    <h2>ammar</h2>
+    <h2>ammar</h2>
+    <h2>ammar</h2>
+    <h2>ammar</h2>
 
-    <script
-      type="text/javascript"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
+    <script type="text/javascript" src="../script/api.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -58,20 +109,14 @@
           const $currentLangFlag = $(".current-lang .lang-flag");
           if (currentLanguage === "en") {
             $currentLangElement.text("English");
-            $currentLangFlag.attr(
-              "src",
-              "https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"
-            );
+
             $("body").css({
               direction: "ltr",
               "font-family": "sans-serif",
             });
           } else if (currentLanguage === "ar") {
             $currentLangElement.text("اللغة العربية");
-            $currentLangFlag.attr(
-              "src",
-              "https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Saudi_Arabia.png"
-            );
+
             $("body").css({
               direction: "rtl",
               "font-family": "'Cairo', sans-serif",
@@ -184,6 +229,10 @@
       }
       .-VIpgJd-yAWNEb-VIpgJd-fmcms-sn540 {
         background: none !important;
+      }
+
+      .color_w {
+        color: white;
       }
     </style>
   </body>
