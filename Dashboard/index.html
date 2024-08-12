@@ -899,17 +899,13 @@
           </p>
 
           <div class="flex ptn">
-            <div class="walletBalanceCard" type="button" onclick="addElement()">
-              <button>Add clients</button>
-            </div>
-
-            <div
+            <button
               class="walletBalanceCard"
               type="button"
-              onclick="removeElement()"
+              onclick="Addclients()"
             >
-              <button>Delet clients</button>
-            </div>
+              Add Client
+            </button>
 
             <div class="walletBalanceCard" type="button">
               <button>Upload clients</button>
@@ -920,32 +916,7 @@
               enctype="multipart/form-data"
               id="container"
             >
-              <template id="inputFileTemplate">
-                <div class="card">
-                  <div class="comments">
-                    <div class="comment-container">
-                      <div class="row">
-                        <div class="col">
-                          <label> clients img <em> </em></label
-                          ><input
-                            type="file"
-                            class="text"
-                            placeholder="clients img"
-                          />
-                        </div>
-                        <div class="col">
-                          <label> clients Name <em> </em></label
-                          ><input class="text" placeholder="clients name " />
-                        </div>
-                        <div class="col">
-                          <label>clients Office <em> </em></label
-                          ><input class="text" placeholder="clients Office " />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </template>
+              <template id="inputFileTemplate"> </template>
             </form>
           </div>
         </div>
@@ -1709,6 +1680,46 @@
         if (col) {
           col.remove(); // Remove the entire column
         }
+      }
+    </script>
+
+    <script>
+      function Addclients() {
+        const container = document.getElementById("container");
+        const new_ = document.createElement("div");
+        new_.className = "row";
+        new_.innerHTML = `
+
+
+                <div class="dell" onclick="deleteClient(this)"  style="    position: relative;
+    margin-top: 8vh;
+    background: #e6b595;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
+                              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"></path>
+                            </svg>
+                          </div>
+
+      <div class="col">
+        <label>Client Img <em></em></label>
+        <input type="file" class="text" placeholder="Client Img" />
+      </div>
+      <div class="col">
+        <label>Client Name <em></em></label>
+        <input class="text" placeholder="Client Name" />
+      </div>
+      <div class="col">
+        <label>Client Office <em></em></label>
+        <input class="text" placeholder="Client Office" />
+      </div>
+   
+    `;
+
+        container.appendChild(new_);
+      }
+
+      function deleteClient(button) {
+        const row = button.closest(".row");
+        row.remove();
       }
     </script>
   </div>

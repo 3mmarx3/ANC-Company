@@ -110,28 +110,6 @@ form.addEventListener("click", function (event) {
 
 // script 2
 
-function addElement() {
-  var template = document.getElementById("inputFileTemplate");
-  var clone = template.content.cloneNode(true);
-  document.getElementById("container").appendChild(clone);
-}
-
-function removeElement() {
-  var container = document.getElementById("container");
-  if (container.lastElementChild) {
-    container.removeChild(container.lastElementChild);
-  }
-}
-
-var isAdvancedUpload = (function () {
-  var div = document.createElement("div");
-  return (
-    ("draggable" in div || ("ondragstart" in div && "ondrop" in div)) &&
-    "FormData" in window &&
-    "FileReader" in window
-  );
-})();
-
 let draggableFileArea = document.querySelector(".drag-file-area");
 let browseFileText = document.querySelector(".browse-files");
 let uploadIcon = document.querySelector(".upload-icon");
